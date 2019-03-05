@@ -4,7 +4,7 @@ Research Assistant: Michael O'neil, moneil8 at vols.utk.edu
 #######################################################################
 Zhao's Brain-computer interface lab, University of Tennessee, Knoxville
 Yang's ABC lab, University of Kentucky, Lexington
-Bluegrass Working Memory Neurofeedback paradigm has been developed by Dr. Yang Jiang 
+Bluegrass Short-term Memory and Neurofeedback paradigm has been developed by Dr. Yang Jiang 
 
 #######################################################################
 Requirements:
