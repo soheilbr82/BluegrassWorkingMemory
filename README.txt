@@ -1,10 +1,12 @@
-﻿Zhao's Brain-computer interface lab, University of Tenness, Knoxville
+﻿Zhao's Brain-computer interface lab, University of Tennessee, Knoxville
+Yang's ABC lab, University of Kentucky, Lexington
 Project: Bluegrass Working Memory Neurofeedback
 
 #######################################################################
-PIs: Xiaopeng Zhao, xzhao9@utk.edu
-PhD Student: Soheil Borhani, sborhani@vols.utk.edu
-Research Assistant: Michael O'neil, moneil8@vols.utk.edu
+PIs: Xiaopeng Zhao, xzhao9 at utk.edu
+     Yang Jiang, yjiang at uky.edu
+PhD Student: Soheil Borhani, sborhani at vols.utk.edu
+Research Assistant: Michael O'neil, moneil8 at vols.utk.edu
 
 #######################################################################
 Requirements:
