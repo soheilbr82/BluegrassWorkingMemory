@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on February 28, 2019, at 01:56
+    on March 08, 2019, at 15:18
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='G:\\Team Drives\\Bluegrass Memory\\BluegrassWMPlatform_Psychopy\\BluegrassWM_A4_lastrun.py',
+    originPath='D:\\Projects\\BluegrassWMPlatform_PsychopyV2\\BluegrassWM_A4_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -74,17 +74,28 @@ import random, xlrd, os, sys
 sys.path.append('./lib/')
 
 # Open LabRecorder
-os.startfile(".\lib\LabRecorder\LabRecorder.exe")
-
+#os.startfile(".\lib\LabRecorder\LabRecorder.exe")
 
 
 
 # Add lsl keypress markers
 from pylsl import StreamInfo, StreamOutlet
-info = StreamInfo(name='my_stream_name', type='Markers', channel_count=1,
-                  channel_format='string', source_id='keyboard("a" , "l")')
+info = StreamInfo(name='Keyboard', type='Markers', channel_count=1,
+                  channel_format='string', source_id='Keyboard')
 # Initialize the keyboard stream.
 outlet = StreamOutlet(info)
+
+
+
+currentTime = expInfo['date']
+subjectID = expInfo['participant']
+Labrecorder = '.\lib\LabRecorder\LabRecorderCLI.exe'
+Dataset='.\Dataset'
+
+# Open LabRecorder
+import subprocess, sys, os
+#os.system("start /B start cmd.exe @cmd /k .\lib\LabRecorder\LabRecorderCLI.exe .\Dataset\'currentTime'.xdf 'type=EEG'")
+os.system("start /B start cmd.exe @cmd /k %s %s\%s_%s 'type=EEG'" % (Labrecorder, Dataset, currentTime,subjectID))
 
 
 

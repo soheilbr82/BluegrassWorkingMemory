@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 01, 2019, at 11:09
+    on March 08, 2019, at 15:13
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='G:\\Team Drives\\Bluegrass Memory\\BluegrassWMPlatform_Psychopy\\BluegrassWM_A1_A2_Resting_lastrun.py',
+    originPath='D:\\Projects\\BluegrassWMPlatform_PsychopyV2\\BluegrassWM_A1_A2_Resting_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -229,7 +229,7 @@ polygon_end = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 end_text = visual.TextStim(win=win, name='end_text',
-    text='Thank you for your \nparticipation!',
+    text='Thank you for your \npatience!',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -399,7 +399,7 @@ polygon_end_2 = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 end_text_2 = visual.TextStim(win=win, name='end_text_2',
-    text='Thank you for your \nparticipation!',
+    text='Thank you for your \npatience!',
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -609,22 +609,32 @@ continueRoutine = True
 import random, xlrd, os, sys
 sys.path.append('./lib/')
 
+
+
 # Open LabRecorder
-os.startfile(".\lib\LabRecorder\LabRecorder.exe")
+#os.system(".\lib\LabRecorder\LabRecorder.exe")
 
 
 
 
 # Add lsl keypress markers
 from pylsl import StreamInfo, StreamOutlet
-info = StreamInfo(name='my_stream_name', type='Markers', channel_count=1,
-                  channel_format='string', source_id='keyboard("a" , "l")')
+info = StreamInfo(name='Keyboard', type='Markers', channel_count=1,
+                  channel_format='string', source_id='Keyboard')
 # Initialize the keyboard stream.
 outlet = StreamOutlet(info)
 
 
 
+currentTime = expInfo['date']
+subjectID = expInfo['participant']
+Labrecorder = '.\lib\LabRecorder\LabRecorderCLI.exe'
+Dataset='.\Dataset'
 
+# Open LabRecorder
+import subprocess, sys, os
+#os.system("start /B start cmd.exe @cmd /k .\lib\LabRecorder\LabRecorderCLI.exe .\Dataset\'currentTime'.xdf 'type=EEG'")
+os.system("start /B start cmd.exe @cmd /k %s %s\%s_%s 'type=EEG'" % (Labrecorder, Dataset, currentTime,subjectID))
 
 
 
@@ -678,6 +688,14 @@ blockIdx = 0
 # parse out the duration of trial and inter-trial
 TrialDuration = [x/1000 for x in Duration]
 ITDuration = [x/1000 + y/1000 for x,y in zip(ISI,Jitter)]
+
+
+
+
+
+
+
+
 
 # keep track of which components have finished
 initiationComponents = []
@@ -759,7 +777,7 @@ while continueRoutine:
         keyPressRun.frameNStart = frameN  # exact frame index
         keyPressRun.status = STARTED
         # keyboard checking is just starting
-        win.callOnFlip(keyPressRun.clock.reset)  # t=0 on next screen flip
+        keyPressRun.clock.reset()  # now t=0
         event.clearEvents(eventType='keyboard')
     if keyPressRun.status == STARTED:
         theseKeys = event.getKeys(keyList=['space'])
@@ -1541,7 +1559,7 @@ while continueRoutine:
         keyPressRun_2.frameNStart = frameN  # exact frame index
         keyPressRun_2.status = STARTED
         # keyboard checking is just starting
-        win.callOnFlip(keyPressRun_2.clock.reset)  # t=0 on next screen flip
+        keyPressRun_2.clock.reset()  # now t=0
         event.clearEvents(eventType='keyboard')
     if keyPressRun_2.status == STARTED:
         theseKeys = event.getKeys(keyList=['space'])
@@ -2447,6 +2465,7 @@ t = 0
 waitInterTrial_3Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
+routineTimer.add(2.000000)
 # update component parameters for each repeat
 # Send trial onset marker to LSL
 outlet.push_sample('n')
@@ -2458,7 +2477,7 @@ for thisComponent in waitInterTrial_3Components:
         thisComponent.status = NOT_STARTED
 
 # -------Start Routine "waitInterTrial_3"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = waitInterTrial_3Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
@@ -2471,7 +2490,7 @@ while continueRoutine:
         blackWaitInterTrial_5.tStart = t
         blackWaitInterTrial_5.frameNStart = frameN  # exact frame index
         blackWaitInterTrial_5.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
     if blackWaitInterTrial_5.status == STARTED and t >= frameRemains:
         blackWaitInterTrial_5.setAutoDraw(False)
     
@@ -2481,7 +2500,7 @@ while continueRoutine:
         whiteWaitInterTrial_5.tStart = t
         whiteWaitInterTrial_5.frameNStart = frameN  # exact frame index
         whiteWaitInterTrial_5.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
     if whiteWaitInterTrial_5.status == STARTED and t >= frameRemains:
         whiteWaitInterTrial_5.setAutoDraw(False)
     
@@ -2507,8 +2526,6 @@ for thisComponent in waitInterTrial_3Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
-# the Routine "waitInterTrial_3" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # ------Prepare to start Routine "desEyesClose"-------
 t = 0
@@ -2551,7 +2568,7 @@ while continueRoutine:
         keyPressRun_4.frameNStart = frameN  # exact frame index
         keyPressRun_4.status = STARTED
         # keyboard checking is just starting
-        win.callOnFlip(keyPressRun_4.clock.reset)  # t=0 on next screen flip
+        keyPressRun_4.clock.reset()  # now t=0
         event.clearEvents(eventType='keyboard')
     if keyPressRun_4.status == STARTED:
         theseKeys = event.getKeys(keyList=['space'])
@@ -2759,6 +2776,7 @@ t = 0
 waitInterTrial_4Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
+routineTimer.add(2.000000)
 # update component parameters for each repeat
 # Send trial onset marker to LSL
 outlet.push_sample('n')
@@ -2770,7 +2788,7 @@ for thisComponent in waitInterTrial_4Components:
         thisComponent.status = NOT_STARTED
 
 # -------Start Routine "waitInterTrial_4"-------
-while continueRoutine:
+while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = waitInterTrial_4Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
@@ -2783,7 +2801,7 @@ while continueRoutine:
         blackWaitInterTrial_6.tStart = t
         blackWaitInterTrial_6.frameNStart = frameN  # exact frame index
         blackWaitInterTrial_6.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
     if blackWaitInterTrial_6.status == STARTED and t >= frameRemains:
         blackWaitInterTrial_6.setAutoDraw(False)
     
@@ -2793,7 +2811,7 @@ while continueRoutine:
         whiteWaitInterTrial_6.tStart = t
         whiteWaitInterTrial_6.frameNStart = frameN  # exact frame index
         whiteWaitInterTrial_6.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
     if whiteWaitInterTrial_6.status == STARTED and t >= frameRemains:
         whiteWaitInterTrial_6.setAutoDraw(False)
     
@@ -2819,8 +2837,6 @@ for thisComponent in waitInterTrial_4Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
-# the Routine "waitInterTrial_4" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # ------Prepare to start Routine "end_3"-------
 t = 0
