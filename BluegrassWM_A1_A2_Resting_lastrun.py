@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 11, 2019, at 14:50
+    on March 11, 2019, at 15:30
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -886,7 +886,7 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in Fixation10Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-child.sendline('\r')
+
 
 # set up handler to look after randomisation of conditions etc
 A1_Blocks = data.TrialHandler(nReps=numBlocks, method='sequential', 
