@@ -78,3 +78,11 @@ The recording program (LabRecorder) and Python/C++ library (RecorderLib) record 
 format (Extensible Data Format, hosted at https://github.com/sccn/xdf). XDF was designed concurrently 
 with the lab streaming layer and supports the full feature set of LSL (including multi-stream container 
 files, per-stream arbitrarily large XML headers, all sample formats as well as time-synchronization information).
+
+#######################################################################
+Additional feature:
+
+1-Automatically start and stop LabRecorder during the experiment in the background
+	- On Windows we need "winpexpect" library to accomodate LabRecorder in the background automatically.
+		You have to add "winpexpect.py" and "pexpect.py" to the Psychopy installation folder in <install-source>\PsychoPy3\Lib\site-packages
+

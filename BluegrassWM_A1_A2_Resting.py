@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 08, 2019, at 13:44
+    on March 11, 2019, at 13:48
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Projects\\BluegrassWMPlatform_PsychopyV2\\BluegrassWM_A1_A2_Resting.py',
+    originPath='D:\\Projects\\BluegrassWMPlatform_Psychopy\\BluegrassWM_A1_A2_Resting.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -626,17 +626,16 @@ outlet = StreamOutlet(info)
 
 
 
+currentTime = expInfo['date']
+subjectID = expInfo['participant']
+Labrecorder = '.\lib\LabRecorder\LabRecorderCLI.exe'
+Dataset='.\Dataset'
 
 # Open LabRecorder
-import subprocess, sys, os
-os.system("start /B start cmd.exe @cmd /k .\lib\LabRecorder\LabRecorderCLI.exe output.xdf 'type=EEG'")
-
-
-
-
-
-
-
+import subprocess, sys, os, winpexpect, time
+#os.system("start /B start cmd.exe @cmd /k .\lib\LabRecorder\LabRecorderCLI.exe .\Dataset\'currentTime'.xdf 'type=EEG'")
+#os.system("start /B start cmd.exe @cmd /k %s %s\%s_%s 'type=EEG'" % (Labrecorder, Dataset, currentTime,subjectID))
+child =  winpexpect.winspawn('%s %s\%s_%s \'name="Keyboard"\'' % (Labrecorder,Dataset,currentTime,subjectID))
 
 
 
@@ -2847,6 +2846,7 @@ routineTimer.add(2.000000)
 # update component parameters for each repeat
 # Send trial onset marker to LSL
 outlet.push_sample('e')
+
 # keep track of which components have finished
 end_3Components = [polygon_end_3, end_text_3]
 for thisComponent in end_3Components:
@@ -2902,7 +2902,7 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in end_3Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-
+child.sendline('\r')
 
 
 
