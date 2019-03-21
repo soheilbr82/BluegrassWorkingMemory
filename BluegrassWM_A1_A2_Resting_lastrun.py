@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 21, 2019, at 16:59
+    on March 21, 2019, at 18:24
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -71,6 +71,229 @@ else:
 initiationClock = core.Clock()
 
 
+# Initialize components for Routine "desEyesOpen"
+desEyesOpenClock = core.Clock()
+polygon_3 = visual.Rect(
+    win=win, name='polygon_3',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_3 = visual.TextStim(win=win, name='descriptionText_3',
+    text='Eyes open for one minute\nPlease stare at fixation point\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "Fixation10"
+Fixation10Clock = core.Clock()
+fixation10 = visual.Rect(
+    win=win, name='fixation10',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+fixationImage10 = visual.ImageStim(
+    win=win, name='fixationImage10',
+    image='./stimuli/images/fix.bmp', mask=None,
+    ori=0, pos=(0, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
+
+# Initialize components for Routine "EyesOpen"
+EyesOpenClock = core.Clock()
+blackProc_3 = visual.Rect(
+    win=win, name='blackProc_3',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+greenProc_3 = visual.Rect(
+    win=win, name='greenProc_3',
+    width=(1.0, 1.0)[0], height=(1.0, 1.0)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='white', lineColorSpace='rgb',
+    fillColor='white', fillColorSpace='rgb',
+    opacity=1, depth=-1.0, interpolate=True)
+ProcTarget_3 = visual.ImageStim(
+    win=win, name='ProcTarget_3',
+    image='sin', mask=None,
+    ori=0, pos=(-0.4, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+ProcPicture_3 = visual.ImageStim(
+    win=win, name='ProcPicture_3',
+    image='sin', mask=None,
+    ori=0, pos=(0.4, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-3.0)
+
+
+# Initialize components for Routine "waitInterTrial_3"
+waitInterTrial_3Clock = core.Clock()
+
+blackWaitInterTrial_5 = visual.Rect(
+    win=win, name='blackWaitInterTrial_5',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=-1.0, interpolate=True)
+whiteWaitInterTrial_5 = visual.ImageStim(
+    win=win, name='whiteWaitInterTrial_5',
+    image='./stimuli/images/blank.bmp', mask=None,
+    ori=0, pos=(0, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+
+# Initialize components for Routine "desEyesClose"
+desEyesCloseClock = core.Clock()
+polygon_4 = visual.Rect(
+    win=win, name='polygon_4',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_4 = visual.TextStim(win=win, name='descriptionText_4',
+    text='Eyes close for one minute\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "Fixation10"
+Fixation10Clock = core.Clock()
+fixation10 = visual.Rect(
+    win=win, name='fixation10',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+fixationImage10 = visual.ImageStim(
+    win=win, name='fixationImage10',
+    image='./stimuli/images/fix.bmp', mask=None,
+    ori=0, pos=(0, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
+
+# Initialize components for Routine "EyesClose"
+EyesCloseClock = core.Clock()
+blackProc_4 = visual.Rect(
+    win=win, name='blackProc_4',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+greenProc_4 = visual.Rect(
+    win=win, name='greenProc_4',
+    width=(1.0, 1.0)[0], height=(1.0, 1.0)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='white', lineColorSpace='rgb',
+    fillColor='white', fillColorSpace='rgb',
+    opacity=1, depth=-1.0, interpolate=True)
+ProcTarget_4 = visual.ImageStim(
+    win=win, name='ProcTarget_4',
+    image='sin', mask=None,
+    ori=0, pos=(0, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+
+
+# Initialize components for Routine "waitInterTrial_4"
+waitInterTrial_4Clock = core.Clock()
+
+blackWaitInterTrial_6 = visual.Rect(
+    win=win, name='blackWaitInterTrial_6',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=-1.0, interpolate=True)
+whiteWaitInterTrial_6 = visual.ImageStim(
+    win=win, name='whiteWaitInterTrial_6',
+    image='./stimuli/images/blank.bmp', mask=None,
+    ori=0, pos=(0, 0), size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-2.0)
+
+# Initialize components for Routine "end_3"
+end_3Clock = core.Clock()
+polygon_end_3 = visual.Rect(
+    win=win, name='polygon_end_3',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+end_text_3 = visual.TextStim(win=win, name='end_text_3',
+    text=None,
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+
 # Initialize components for Routine "description"
 descriptionClock = core.Clock()
 polygon = visual.Rect(
@@ -105,6 +328,27 @@ fixationImage10 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
 
 # Initialize components for Routine "Procedure1"
 Procedure1Clock = core.Clock()
@@ -229,7 +473,7 @@ polygon_end = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 end_text = visual.TextStim(win=win, name='end_text',
-    text='Thank you for your \npatience!',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -258,23 +502,44 @@ descriptionText_2 = visual.TextStim(win=win, name='descriptionText_2',
     languageStyle='LTR',
     depth=-1.0);
 
-# Initialize components for Routine "Fixation10_2"
-Fixation10_2Clock = core.Clock()
-fixation10_2 = visual.Rect(
-    win=win, name='fixation10_2',
+# Initialize components for Routine "Fixation10"
+Fixation10Clock = core.Clock()
+fixation10 = visual.Rect(
+    win=win, name='fixation10',
     width=(2, 2)[0], height=(2, 2)[1],
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor='black', lineColorSpace='rgb',
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-fixationImage10_2 = visual.ImageStim(
-    win=win, name='fixationImage10_2',
+fixationImage10 = visual.ImageStim(
+    win=win, name='fixationImage10',
     image='./stimuli/images/fix.bmp', mask=None,
     ori=0, pos=(0, 0), size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
 
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-5.0);
 
 # Initialize components for Routine "Procedure1_2"
 Procedure1_2Clock = core.Clock()
@@ -399,188 +664,7 @@ polygon_end_2 = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 end_text_2 = visual.TextStim(win=win, name='end_text_2',
-    text='Thank you for your \npatience!',
-    font='Arial',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-1.0);
-
-
-# Initialize components for Routine "desEyesOpen"
-desEyesOpenClock = core.Clock()
-polygon_3 = visual.Rect(
-    win=win, name='polygon_3',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-descriptionText_3 = visual.TextStim(win=win, name='descriptionText_3',
-    text='Eyes open for one minute\nPlease stare at fixation point\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
-    font='Arial',
-    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-1.0);
-
-# Initialize components for Routine "Fixation10_3"
-Fixation10_3Clock = core.Clock()
-fixation10_3 = visual.Rect(
-    win=win, name='fixation10_3',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-fixationImage10_3 = visual.ImageStim(
-    win=win, name='fixationImage10_3',
-    image='./stimuli/images/fix.bmp', mask=None,
-    ori=0, pos=(0, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-
-
-# Initialize components for Routine "EyesOpen"
-EyesOpenClock = core.Clock()
-blackProc_3 = visual.Rect(
-    win=win, name='blackProc_3',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-greenProc_3 = visual.Rect(
-    win=win, name='greenProc_3',
-    width=(1.0, 1.0)[0], height=(1.0, 1.0)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='white', lineColorSpace='rgb',
-    fillColor='white', fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
-ProcTarget_3 = visual.ImageStim(
-    win=win, name='ProcTarget_3',
-    image='sin', mask=None,
-    ori=0, pos=(-0.4, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-ProcPicture_3 = visual.ImageStim(
-    win=win, name='ProcPicture_3',
-    image='sin', mask=None,
-    ori=0, pos=(0.4, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
-
-
-# Initialize components for Routine "waitInterTrial_3"
-waitInterTrial_3Clock = core.Clock()
-
-blackWaitInterTrial_5 = visual.Rect(
-    win=win, name='blackWaitInterTrial_5',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
-whiteWaitInterTrial_5 = visual.ImageStim(
-    win=win, name='whiteWaitInterTrial_5',
-    image='./stimuli/images/blank.bmp', mask=None,
-    ori=0, pos=(0, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-
-# Initialize components for Routine "desEyesClose"
-desEyesCloseClock = core.Clock()
-polygon_4 = visual.Rect(
-    win=win, name='polygon_4',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-descriptionText_4 = visual.TextStim(win=win, name='descriptionText_4',
-    text='Eyes close for one minute\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
-    font='Arial',
-    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-1.0);
-
-# Initialize components for Routine "Fixation10_4"
-Fixation10_4Clock = core.Clock()
-fixation10_4 = visual.Rect(
-    win=win, name='fixation10_4',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-fixationImage10_4 = visual.ImageStim(
-    win=win, name='fixationImage10_4',
-    image='./stimuli/images/fix.bmp', mask=None,
-    ori=0, pos=(0, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-1.0)
-
-
-# Initialize components for Routine "EyesClose"
-EyesCloseClock = core.Clock()
-blackProc_4 = visual.Rect(
-    win=win, name='blackProc_4',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-greenProc_4 = visual.Rect(
-    win=win, name='greenProc_4',
-    width=(1.0, 1.0)[0], height=(1.0, 1.0)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='white', lineColorSpace='rgb',
-    fillColor='white', fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
-ProcTarget_4 = visual.ImageStim(
-    win=win, name='ProcTarget_4',
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-
-
-# Initialize components for Routine "waitInterTrial_4"
-waitInterTrial_4Clock = core.Clock()
-
-blackWaitInterTrial_6 = visual.Rect(
-    win=win, name='blackWaitInterTrial_6',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
-whiteWaitInterTrial_6 = visual.ImageStim(
-    win=win, name='whiteWaitInterTrial_6',
-    image='./stimuli/images/blank.bmp', mask=None,
-    ori=0, pos=(0, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-2.0)
-
-# Initialize components for Routine "end_3"
-end_3Clock = core.Clock()
-polygon_end_3 = visual.Rect(
-    win=win, name='polygon_end_3',
-    width=(2, 2)[0], height=(2, 2)[1],
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor='black', lineColorSpace='rgb',
-    fillColor='black', fillColorSpace='rgb',
-    opacity=1, depth=0.0, interpolate=True)
-end_text_3 = visual.TextStim(win=win, name='end_text_3',
-    text='Thank you for your \nparticipation!',
+    text=None,
     font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -728,6 +812,743 @@ for thisComponent in initiationComponents:
 # the Routine "initiation" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "desEyesOpen"-------
+t = 0
+desEyesOpenClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_3 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesOpenComponents = [polygon_3, descriptionText_3, keyPressRun_3]
+for thisComponent in desEyesOpenComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesOpen"-------
+while continueRoutine:
+    # get current time
+    t = desEyesOpenClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_3* updates
+    if t >= 0.0 and polygon_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_3.tStart = t
+        polygon_3.frameNStart = frameN  # exact frame index
+        polygon_3.setAutoDraw(True)
+    
+    # *descriptionText_3* updates
+    if t >= 0.0 and descriptionText_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_3.tStart = t
+        descriptionText_3.frameNStart = frameN  # exact frame index
+        descriptionText_3.setAutoDraw(True)
+    
+    # *keyPressRun_3* updates
+    if t >= 0.0 and keyPressRun_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_3.tStart = t
+        keyPressRun_3.frameNStart = frameN  # exact frame index
+        keyPressRun_3.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_3.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_3.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_3.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_3.rt = keyPressRun_3.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesOpenComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesOpen"-------
+for thisComponent in desEyesOpenComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_3.keys in ['', [], None]:  # No response was made
+    keyPressRun_3.keys=None
+thisExp.addData('keyPressRun_3.keys',keyPressRun_3.keys)
+if keyPressRun_3.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_3.rt', keyPressRun_3.rt)
+thisExp.nextEntry()
+# the Routine "desEyesOpen" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "Fixation10"-------
+t = 0
+Fixation10Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(10.000000)
+# update component parameters for each repeat
+fixationImage10.setSize(pictureSize)
+# Send trial onset marker to LSL
+outlet.push_sample('f')
+# keep track of which components have finished
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
+for thisComponent in Fixation10Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "Fixation10"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = Fixation10Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *fixation10* updates
+    if t >= 0.0 and fixation10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        fixation10.tStart = t
+        fixation10.frameNStart = frameN  # exact frame index
+        fixation10.setAutoDraw(True)
+    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if fixation10.status == STARTED and t >= frameRemains:
+        fixation10.setAutoDraw(False)
+    
+    # *fixationImage10* updates
+    if t >= 0.0 and fixationImage10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        fixationImage10.tStart = t
+        fixationImage10.frameNStart = frameN  # exact frame index
+        fixationImage10.setAutoDraw(True)
+    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if fixationImage10.status == STARTED and t >= frameRemains:
+        fixationImage10.setAutoDraw(False)
+    
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in Fixation10Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "Fixation10"-------
+for thisComponent in Fixation10Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "EyesOpen"-------
+t = 0
+EyesOpenClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(90.000000)
+# update component parameters for each repeat
+greenProc_3.setSize(greenSize)
+ProcTarget_3.setSize(pictureSize)
+ProcTarget_3.setImage('./stimuli/images/086.bmp')
+ProcPicture_3.setSize(pictureSize)
+ProcPicture_3.setImage('./stimuli/images/086.bmp')
+# Send trial onset marker to LSL
+outlet.push_sample('o')
+# keep track of which components have finished
+EyesOpenComponents = [blackProc_3, greenProc_3, ProcTarget_3, ProcPicture_3]
+for thisComponent in EyesOpenComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "EyesOpen"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = EyesOpenClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *blackProc_3* updates
+    if t >= 0.0 and blackProc_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        blackProc_3.tStart = t
+        blackProc_3.frameNStart = frameN  # exact frame index
+        blackProc_3.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if blackProc_3.status == STARTED and t >= frameRemains:
+        blackProc_3.setAutoDraw(False)
+    
+    # *greenProc_3* updates
+    if t >= 0.0 and greenProc_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        greenProc_3.tStart = t
+        greenProc_3.frameNStart = frameN  # exact frame index
+        greenProc_3.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if greenProc_3.status == STARTED and t >= frameRemains:
+        greenProc_3.setAutoDraw(False)
+    
+    # *ProcTarget_3* updates
+    if t >= 0.0 and ProcTarget_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        ProcTarget_3.tStart = t
+        ProcTarget_3.frameNStart = frameN  # exact frame index
+        ProcTarget_3.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if ProcTarget_3.status == STARTED and t >= frameRemains:
+        ProcTarget_3.setAutoDraw(False)
+    
+    # *ProcPicture_3* updates
+    if t >= 0.0 and ProcPicture_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        ProcPicture_3.tStart = t
+        ProcPicture_3.frameNStart = frameN  # exact frame index
+        ProcPicture_3.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if ProcPicture_3.status == STARTED and t >= frameRemains:
+        ProcPicture_3.setAutoDraw(False)
+    
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in EyesOpenComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "EyesOpen"-------
+for thisComponent in EyesOpenComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "waitInterTrial_3"-------
+t = 0
+waitInterTrial_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(2.000000)
+# update component parameters for each repeat
+# Send trial onset marker to LSL
+outlet.push_sample('n')
+whiteWaitInterTrial_5.setSize(pictureSize)
+# keep track of which components have finished
+waitInterTrial_3Components = [blackWaitInterTrial_5, whiteWaitInterTrial_5]
+for thisComponent in waitInterTrial_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "waitInterTrial_3"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = waitInterTrial_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    
+    # *blackWaitInterTrial_5* updates
+    if t >= 0.0 and blackWaitInterTrial_5.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        blackWaitInterTrial_5.tStart = t
+        blackWaitInterTrial_5.frameNStart = frameN  # exact frame index
+        blackWaitInterTrial_5.setAutoDraw(True)
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if blackWaitInterTrial_5.status == STARTED and t >= frameRemains:
+        blackWaitInterTrial_5.setAutoDraw(False)
+    
+    # *whiteWaitInterTrial_5* updates
+    if t >= 0.0 and whiteWaitInterTrial_5.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        whiteWaitInterTrial_5.tStart = t
+        whiteWaitInterTrial_5.frameNStart = frameN  # exact frame index
+        whiteWaitInterTrial_5.setAutoDraw(True)
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if whiteWaitInterTrial_5.status == STARTED and t >= frameRemains:
+        whiteWaitInterTrial_5.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in waitInterTrial_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "waitInterTrial_3"-------
+for thisComponent in waitInterTrial_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "desEyesClose"-------
+t = 0
+desEyesCloseClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_4 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesCloseComponents = [polygon_4, descriptionText_4, keyPressRun_4]
+for thisComponent in desEyesCloseComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesClose"-------
+while continueRoutine:
+    # get current time
+    t = desEyesCloseClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_4* updates
+    if t >= 0.0 and polygon_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_4.tStart = t
+        polygon_4.frameNStart = frameN  # exact frame index
+        polygon_4.setAutoDraw(True)
+    
+    # *descriptionText_4* updates
+    if t >= 0.0 and descriptionText_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_4.tStart = t
+        descriptionText_4.frameNStart = frameN  # exact frame index
+        descriptionText_4.setAutoDraw(True)
+    
+    # *keyPressRun_4* updates
+    if t >= 0.0 and keyPressRun_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_4.tStart = t
+        keyPressRun_4.frameNStart = frameN  # exact frame index
+        keyPressRun_4.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_4.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_4.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_4.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_4.rt = keyPressRun_4.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesCloseComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesClose"-------
+for thisComponent in desEyesCloseComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_4.keys in ['', [], None]:  # No response was made
+    keyPressRun_4.keys=None
+thisExp.addData('keyPressRun_4.keys',keyPressRun_4.keys)
+if keyPressRun_4.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_4.rt', keyPressRun_4.rt)
+thisExp.nextEntry()
+# the Routine "desEyesClose" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "Fixation10"-------
+t = 0
+Fixation10Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(10.000000)
+# update component parameters for each repeat
+fixationImage10.setSize(pictureSize)
+# Send trial onset marker to LSL
+outlet.push_sample('f')
+# keep track of which components have finished
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
+for thisComponent in Fixation10Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "Fixation10"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = Fixation10Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *fixation10* updates
+    if t >= 0.0 and fixation10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        fixation10.tStart = t
+        fixation10.frameNStart = frameN  # exact frame index
+        fixation10.setAutoDraw(True)
+    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if fixation10.status == STARTED and t >= frameRemains:
+        fixation10.setAutoDraw(False)
+    
+    # *fixationImage10* updates
+    if t >= 0.0 and fixationImage10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        fixationImage10.tStart = t
+        fixationImage10.frameNStart = frameN  # exact frame index
+        fixationImage10.setAutoDraw(True)
+    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if fixationImage10.status == STARTED and t >= frameRemains:
+        fixationImage10.setAutoDraw(False)
+    
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in Fixation10Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "Fixation10"-------
+for thisComponent in Fixation10Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "EyesClose"-------
+t = 0
+EyesCloseClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(90.000000)
+# update component parameters for each repeat
+greenProc_4.setSize(greenSize)
+ProcTarget_4.setSize(greenSize)
+ProcTarget_4.setImage('./stimuli/images/ocean.jpg')
+# Send trial onset marker to LSL
+outlet.push_sample('c')
+# keep track of which components have finished
+EyesCloseComponents = [blackProc_4, greenProc_4, ProcTarget_4]
+for thisComponent in EyesCloseComponents:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "EyesClose"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = EyesCloseClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *blackProc_4* updates
+    if t >= 0.0 and blackProc_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        blackProc_4.tStart = t
+        blackProc_4.frameNStart = frameN  # exact frame index
+        blackProc_4.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if blackProc_4.status == STARTED and t >= frameRemains:
+        blackProc_4.setAutoDraw(False)
+    
+    # *greenProc_4* updates
+    if t >= 0.0 and greenProc_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        greenProc_4.tStart = t
+        greenProc_4.frameNStart = frameN  # exact frame index
+        greenProc_4.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if greenProc_4.status == STARTED and t >= frameRemains:
+        greenProc_4.setAutoDraw(False)
+    
+    # *ProcTarget_4* updates
+    if t >= 0.0 and ProcTarget_4.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        ProcTarget_4.tStart = t
+        ProcTarget_4.frameNStart = frameN  # exact frame index
+        ProcTarget_4.setAutoDraw(True)
+    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if ProcTarget_4.status == STARTED and t >= frameRemains:
+        ProcTarget_4.setAutoDraw(False)
+    
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in EyesCloseComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "EyesClose"-------
+for thisComponent in EyesCloseComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "waitInterTrial_4"-------
+t = 0
+waitInterTrial_4Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(2.000000)
+# update component parameters for each repeat
+# Send trial onset marker to LSL
+outlet.push_sample('n')
+whiteWaitInterTrial_6.setSize(pictureSize)
+# keep track of which components have finished
+waitInterTrial_4Components = [blackWaitInterTrial_6, whiteWaitInterTrial_6]
+for thisComponent in waitInterTrial_4Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "waitInterTrial_4"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = waitInterTrial_4Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    
+    # *blackWaitInterTrial_6* updates
+    if t >= 0.0 and blackWaitInterTrial_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        blackWaitInterTrial_6.tStart = t
+        blackWaitInterTrial_6.frameNStart = frameN  # exact frame index
+        blackWaitInterTrial_6.setAutoDraw(True)
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if blackWaitInterTrial_6.status == STARTED and t >= frameRemains:
+        blackWaitInterTrial_6.setAutoDraw(False)
+    
+    # *whiteWaitInterTrial_6* updates
+    if t >= 0.0 and whiteWaitInterTrial_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        whiteWaitInterTrial_6.tStart = t
+        whiteWaitInterTrial_6.frameNStart = frameN  # exact frame index
+        whiteWaitInterTrial_6.setAutoDraw(True)
+    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if whiteWaitInterTrial_6.status == STARTED and t >= frameRemains:
+        whiteWaitInterTrial_6.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in waitInterTrial_4Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "waitInterTrial_4"-------
+for thisComponent in waitInterTrial_4Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+
+
+# ------Prepare to start Routine "end_3"-------
+t = 0
+end_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(2.000000)
+# update component parameters for each repeat
+# Send trial onset marker to LSL
+outlet.push_sample('e')
+
+# keep track of which components have finished
+end_3Components = [polygon_end_3, end_text_3]
+for thisComponent in end_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "end_3"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = end_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_end_3* updates
+    if t >= 0.0 and polygon_end_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_end_3.tStart = t
+        polygon_end_3.frameNStart = frameN  # exact frame index
+        polygon_end_3.setAutoDraw(True)
+    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if polygon_end_3.status == STARTED and t >= frameRemains:
+        polygon_end_3.setAutoDraw(False)
+    
+    # *end_text_3* updates
+    if t >= 0.0 and end_text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        end_text_3.tStart = t
+        end_text_3.frameNStart = frameN  # exact frame index
+        end_text_3.setAutoDraw(True)
+    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if end_text_3.status == STARTED and t >= frameRemains:
+        end_text_3.setAutoDraw(False)
+    
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in end_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "end_3"-------
+for thisComponent in end_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+child.sendline('\r')
+
 # ------Prepare to start Routine "description"-------
 t = 0
 descriptionClock.reset()  # clock
@@ -825,7 +1646,7 @@ fixationImage10.setSize(pictureSize)
 # Send trial onset marker to LSL
 outlet.push_sample('f')
 # keep track of which components have finished
-Fixation10Components = [fixation10, fixationImage10]
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
 for thisComponent in Fixation10Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -857,6 +1678,36 @@ while continueRoutine and routineTimer.getTime() > 0:
     if fixationImage10.status == STARTED and t >= frameRemains:
         fixationImage10.setAutoDraw(False)
     
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or event.getKeys(keyList=["escape"]):
@@ -1596,49 +2447,79 @@ thisExp.nextEntry()
 # the Routine "description_2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "Fixation10_2"-------
+# ------Prepare to start Routine "Fixation10"-------
 t = 0
-Fixation10_2Clock.reset()  # clock
+Fixation10Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 routineTimer.add(10.000000)
 # update component parameters for each repeat
-fixationImage10_2.setSize(pictureSize)
+fixationImage10.setSize(pictureSize)
 # Send trial onset marker to LSL
 outlet.push_sample('f')
 # keep track of which components have finished
-Fixation10_2Components = [fixation10_2, fixationImage10_2]
-for thisComponent in Fixation10_2Components:
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
+for thisComponent in Fixation10Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "Fixation10_2"-------
+# -------Start Routine "Fixation10"-------
 while continueRoutine and routineTimer.getTime() > 0:
     # get current time
-    t = Fixation10_2Clock.getTime()
+    t = Fixation10Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *fixation10_2* updates
-    if t >= 0.0 and fixation10_2.status == NOT_STARTED:
+    # *fixation10* updates
+    if t >= 0.0 and fixation10.status == NOT_STARTED:
         # keep track of start time/frame for later
-        fixation10_2.tStart = t
-        fixation10_2.frameNStart = frameN  # exact frame index
-        fixation10_2.setAutoDraw(True)
+        fixation10.tStart = t
+        fixation10.frameNStart = frameN  # exact frame index
+        fixation10.setAutoDraw(True)
     frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixation10_2.status == STARTED and t >= frameRemains:
-        fixation10_2.setAutoDraw(False)
+    if fixation10.status == STARTED and t >= frameRemains:
+        fixation10.setAutoDraw(False)
     
-    # *fixationImage10_2* updates
-    if t >= 0.0 and fixationImage10_2.status == NOT_STARTED:
+    # *fixationImage10* updates
+    if t >= 0.0 and fixationImage10.status == NOT_STARTED:
         # keep track of start time/frame for later
-        fixationImage10_2.tStart = t
-        fixationImage10_2.frameNStart = frameN  # exact frame index
-        fixationImage10_2.setAutoDraw(True)
+        fixationImage10.tStart = t
+        fixationImage10.frameNStart = frameN  # exact frame index
+        fixationImage10.setAutoDraw(True)
     frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixationImage10_2.status == STARTED and t >= frameRemains:
-        fixationImage10_2.setAutoDraw(False)
+    if fixationImage10.status == STARTED and t >= frameRemains:
+        fixationImage10.setAutoDraw(False)
     
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or event.getKeys(keyList=["escape"]):
@@ -1648,7 +2529,7 @@ while continueRoutine and routineTimer.getTime() > 0:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Fixation10_2Components:
+    for thisComponent in Fixation10Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -1657,8 +2538,8 @@ while continueRoutine and routineTimer.getTime() > 0:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "Fixation10_2"-------
-for thisComponent in Fixation10_2Components:
+# -------Ending Routine "Fixation10"-------
+for thisComponent in Fixation10Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
@@ -2207,683 +3088,6 @@ for thisComponent in end_2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
-
-# ------Prepare to start Routine "desEyesOpen"-------
-t = 0
-desEyesOpenClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-# update component parameters for each repeat
-keyPressRun_3 = event.BuilderKeyResponse()
-# keep track of which components have finished
-desEyesOpenComponents = [polygon_3, descriptionText_3, keyPressRun_3]
-for thisComponent in desEyesOpenComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "desEyesOpen"-------
-while continueRoutine:
-    # get current time
-    t = desEyesOpenClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *polygon_3* updates
-    if t >= 0.0 and polygon_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        polygon_3.tStart = t
-        polygon_3.frameNStart = frameN  # exact frame index
-        polygon_3.setAutoDraw(True)
-    
-    # *descriptionText_3* updates
-    if t >= 0.0 and descriptionText_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        descriptionText_3.tStart = t
-        descriptionText_3.frameNStart = frameN  # exact frame index
-        descriptionText_3.setAutoDraw(True)
-    
-    # *keyPressRun_3* updates
-    if t >= 0.0 and keyPressRun_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        keyPressRun_3.tStart = t
-        keyPressRun_3.frameNStart = frameN  # exact frame index
-        keyPressRun_3.status = STARTED
-        # keyboard checking is just starting
-        keyPressRun_3.clock.reset()  # now t=0
-        event.clearEvents(eventType='keyboard')
-    if keyPressRun_3.status == STARTED:
-        theseKeys = event.getKeys(keyList=['space'])
-        
-        # check for quit:
-        if "escape" in theseKeys:
-            endExpNow = True
-        if len(theseKeys) > 0:  # at least one key was pressed
-            keyPressRun_3.keys = theseKeys[-1]  # just the last key pressed
-            keyPressRun_3.rt = keyPressRun_3.clock.getTime()
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in desEyesOpenComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "desEyesOpen"-------
-for thisComponent in desEyesOpenComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# check responses
-if keyPressRun_3.keys in ['', [], None]:  # No response was made
-    keyPressRun_3.keys=None
-thisExp.addData('keyPressRun_3.keys',keyPressRun_3.keys)
-if keyPressRun_3.keys != None:  # we had a response
-    thisExp.addData('keyPressRun_3.rt', keyPressRun_3.rt)
-thisExp.nextEntry()
-# the Routine "desEyesOpen" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "Fixation10_3"-------
-t = 0
-Fixation10_3Clock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(10.000000)
-# update component parameters for each repeat
-fixationImage10_3.setSize(pictureSize)
-# Send trial onset marker to LSL
-outlet.push_sample('f')
-# keep track of which components have finished
-Fixation10_3Components = [fixation10_3, fixationImage10_3]
-for thisComponent in Fixation10_3Components:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "Fixation10_3"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = Fixation10_3Clock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *fixation10_3* updates
-    if t >= 0.0 and fixation10_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixation10_3.tStart = t
-        fixation10_3.frameNStart = frameN  # exact frame index
-        fixation10_3.setAutoDraw(True)
-    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixation10_3.status == STARTED and t >= frameRemains:
-        fixation10_3.setAutoDraw(False)
-    
-    # *fixationImage10_3* updates
-    if t >= 0.0 and fixationImage10_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixationImage10_3.tStart = t
-        fixationImage10_3.frameNStart = frameN  # exact frame index
-        fixationImage10_3.setAutoDraw(True)
-    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixationImage10_3.status == STARTED and t >= frameRemains:
-        fixationImage10_3.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Fixation10_3Components:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Fixation10_3"-------
-for thisComponent in Fixation10_3Components:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "EyesOpen"-------
-t = 0
-EyesOpenClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(90.000000)
-# update component parameters for each repeat
-greenProc_3.setSize(greenSize)
-ProcTarget_3.setSize(pictureSize)
-ProcTarget_3.setImage('./stimuli/images/086.bmp')
-ProcPicture_3.setSize(pictureSize)
-ProcPicture_3.setImage('./stimuli/images/086.bmp')
-# Send trial onset marker to LSL
-outlet.push_sample('o')
-# keep track of which components have finished
-EyesOpenComponents = [blackProc_3, greenProc_3, ProcTarget_3, ProcPicture_3]
-for thisComponent in EyesOpenComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "EyesOpen"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = EyesOpenClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *blackProc_3* updates
-    if t >= 0.0 and blackProc_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackProc_3.tStart = t
-        blackProc_3.frameNStart = frameN  # exact frame index
-        blackProc_3.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackProc_3.status == STARTED and t >= frameRemains:
-        blackProc_3.setAutoDraw(False)
-    
-    # *greenProc_3* updates
-    if t >= 0.0 and greenProc_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        greenProc_3.tStart = t
-        greenProc_3.frameNStart = frameN  # exact frame index
-        greenProc_3.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if greenProc_3.status == STARTED and t >= frameRemains:
-        greenProc_3.setAutoDraw(False)
-    
-    # *ProcTarget_3* updates
-    if t >= 0.0 and ProcTarget_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcTarget_3.tStart = t
-        ProcTarget_3.frameNStart = frameN  # exact frame index
-        ProcTarget_3.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcTarget_3.status == STARTED and t >= frameRemains:
-        ProcTarget_3.setAutoDraw(False)
-    
-    # *ProcPicture_3* updates
-    if t >= 0.0 and ProcPicture_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcPicture_3.tStart = t
-        ProcPicture_3.frameNStart = frameN  # exact frame index
-        ProcPicture_3.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcPicture_3.status == STARTED and t >= frameRemains:
-        ProcPicture_3.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in EyesOpenComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "EyesOpen"-------
-for thisComponent in EyesOpenComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "waitInterTrial_3"-------
-t = 0
-waitInterTrial_3Clock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(2.000000)
-# update component parameters for each repeat
-# Send trial onset marker to LSL
-outlet.push_sample('n')
-whiteWaitInterTrial_5.setSize(pictureSize)
-# keep track of which components have finished
-waitInterTrial_3Components = [blackWaitInterTrial_5, whiteWaitInterTrial_5]
-for thisComponent in waitInterTrial_3Components:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "waitInterTrial_3"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = waitInterTrial_3Clock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    
-    # *blackWaitInterTrial_5* updates
-    if t >= 0.0 and blackWaitInterTrial_5.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackWaitInterTrial_5.tStart = t
-        blackWaitInterTrial_5.frameNStart = frameN  # exact frame index
-        blackWaitInterTrial_5.setAutoDraw(True)
-    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackWaitInterTrial_5.status == STARTED and t >= frameRemains:
-        blackWaitInterTrial_5.setAutoDraw(False)
-    
-    # *whiteWaitInterTrial_5* updates
-    if t >= 0.0 and whiteWaitInterTrial_5.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        whiteWaitInterTrial_5.tStart = t
-        whiteWaitInterTrial_5.frameNStart = frameN  # exact frame index
-        whiteWaitInterTrial_5.setAutoDraw(True)
-    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if whiteWaitInterTrial_5.status == STARTED and t >= frameRemains:
-        whiteWaitInterTrial_5.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in waitInterTrial_3Components:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "waitInterTrial_3"-------
-for thisComponent in waitInterTrial_3Components:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "desEyesClose"-------
-t = 0
-desEyesCloseClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-# update component parameters for each repeat
-keyPressRun_4 = event.BuilderKeyResponse()
-# keep track of which components have finished
-desEyesCloseComponents = [polygon_4, descriptionText_4, keyPressRun_4]
-for thisComponent in desEyesCloseComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "desEyesClose"-------
-while continueRoutine:
-    # get current time
-    t = desEyesCloseClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *polygon_4* updates
-    if t >= 0.0 and polygon_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        polygon_4.tStart = t
-        polygon_4.frameNStart = frameN  # exact frame index
-        polygon_4.setAutoDraw(True)
-    
-    # *descriptionText_4* updates
-    if t >= 0.0 and descriptionText_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        descriptionText_4.tStart = t
-        descriptionText_4.frameNStart = frameN  # exact frame index
-        descriptionText_4.setAutoDraw(True)
-    
-    # *keyPressRun_4* updates
-    if t >= 0.0 and keyPressRun_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        keyPressRun_4.tStart = t
-        keyPressRun_4.frameNStart = frameN  # exact frame index
-        keyPressRun_4.status = STARTED
-        # keyboard checking is just starting
-        keyPressRun_4.clock.reset()  # now t=0
-        event.clearEvents(eventType='keyboard')
-    if keyPressRun_4.status == STARTED:
-        theseKeys = event.getKeys(keyList=['space'])
-        
-        # check for quit:
-        if "escape" in theseKeys:
-            endExpNow = True
-        if len(theseKeys) > 0:  # at least one key was pressed
-            keyPressRun_4.keys = theseKeys[-1]  # just the last key pressed
-            keyPressRun_4.rt = keyPressRun_4.clock.getTime()
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in desEyesCloseComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "desEyesClose"-------
-for thisComponent in desEyesCloseComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# check responses
-if keyPressRun_4.keys in ['', [], None]:  # No response was made
-    keyPressRun_4.keys=None
-thisExp.addData('keyPressRun_4.keys',keyPressRun_4.keys)
-if keyPressRun_4.keys != None:  # we had a response
-    thisExp.addData('keyPressRun_4.rt', keyPressRun_4.rt)
-thisExp.nextEntry()
-# the Routine "desEyesClose" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "Fixation10_4"-------
-t = 0
-Fixation10_4Clock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(10.000000)
-# update component parameters for each repeat
-fixationImage10_4.setSize(pictureSize)
-# Send trial onset marker to LSL
-outlet.push_sample('f')
-# keep track of which components have finished
-Fixation10_4Components = [fixation10_4, fixationImage10_4]
-for thisComponent in Fixation10_4Components:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "Fixation10_4"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = Fixation10_4Clock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *fixation10_4* updates
-    if t >= 0.0 and fixation10_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixation10_4.tStart = t
-        fixation10_4.frameNStart = frameN  # exact frame index
-        fixation10_4.setAutoDraw(True)
-    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixation10_4.status == STARTED and t >= frameRemains:
-        fixation10_4.setAutoDraw(False)
-    
-    # *fixationImage10_4* updates
-    if t >= 0.0 and fixationImage10_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixationImage10_4.tStart = t
-        fixationImage10_4.frameNStart = frameN  # exact frame index
-        fixationImage10_4.setAutoDraw(True)
-    frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixationImage10_4.status == STARTED and t >= frameRemains:
-        fixationImage10_4.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Fixation10_4Components:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Fixation10_4"-------
-for thisComponent in Fixation10_4Components:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "EyesClose"-------
-t = 0
-EyesCloseClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(90.000000)
-# update component parameters for each repeat
-greenProc_4.setSize(greenSize)
-ProcTarget_4.setSize(greenSize)
-ProcTarget_4.setImage('./stimuli/images/ocean.jpg')
-# Send trial onset marker to LSL
-outlet.push_sample('c')
-# keep track of which components have finished
-EyesCloseComponents = [blackProc_4, greenProc_4, ProcTarget_4]
-for thisComponent in EyesCloseComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "EyesClose"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = EyesCloseClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *blackProc_4* updates
-    if t >= 0.0 and blackProc_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackProc_4.tStart = t
-        blackProc_4.frameNStart = frameN  # exact frame index
-        blackProc_4.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackProc_4.status == STARTED and t >= frameRemains:
-        blackProc_4.setAutoDraw(False)
-    
-    # *greenProc_4* updates
-    if t >= 0.0 and greenProc_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        greenProc_4.tStart = t
-        greenProc_4.frameNStart = frameN  # exact frame index
-        greenProc_4.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if greenProc_4.status == STARTED and t >= frameRemains:
-        greenProc_4.setAutoDraw(False)
-    
-    # *ProcTarget_4* updates
-    if t >= 0.0 and ProcTarget_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcTarget_4.tStart = t
-        ProcTarget_4.frameNStart = frameN  # exact frame index
-        ProcTarget_4.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcTarget_4.status == STARTED and t >= frameRemains:
-        ProcTarget_4.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in EyesCloseComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "EyesClose"-------
-for thisComponent in EyesCloseComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "waitInterTrial_4"-------
-t = 0
-waitInterTrial_4Clock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(2.000000)
-# update component parameters for each repeat
-# Send trial onset marker to LSL
-outlet.push_sample('n')
-whiteWaitInterTrial_6.setSize(pictureSize)
-# keep track of which components have finished
-waitInterTrial_4Components = [blackWaitInterTrial_6, whiteWaitInterTrial_6]
-for thisComponent in waitInterTrial_4Components:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "waitInterTrial_4"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = waitInterTrial_4Clock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    
-    # *blackWaitInterTrial_6* updates
-    if t >= 0.0 and blackWaitInterTrial_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackWaitInterTrial_6.tStart = t
-        blackWaitInterTrial_6.frameNStart = frameN  # exact frame index
-        blackWaitInterTrial_6.setAutoDraw(True)
-    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackWaitInterTrial_6.status == STARTED and t >= frameRemains:
-        blackWaitInterTrial_6.setAutoDraw(False)
-    
-    # *whiteWaitInterTrial_6* updates
-    if t >= 0.0 and whiteWaitInterTrial_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        whiteWaitInterTrial_6.tStart = t
-        whiteWaitInterTrial_6.frameNStart = frameN  # exact frame index
-        whiteWaitInterTrial_6.setAutoDraw(True)
-    frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if whiteWaitInterTrial_6.status == STARTED and t >= frameRemains:
-        whiteWaitInterTrial_6.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in waitInterTrial_4Components:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "waitInterTrial_4"-------
-for thisComponent in waitInterTrial_4Components:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# ------Prepare to start Routine "end_3"-------
-t = 0
-end_3Clock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(2.000000)
-# update component parameters for each repeat
-# Send trial onset marker to LSL
-outlet.push_sample('e')
-
-# keep track of which components have finished
-end_3Components = [polygon_end_3, end_text_3]
-for thisComponent in end_3Components:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "end_3"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = end_3Clock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *polygon_end_3* updates
-    if t >= 0.0 and polygon_end_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        polygon_end_3.tStart = t
-        polygon_end_3.frameNStart = frameN  # exact frame index
-        polygon_end_3.setAutoDraw(True)
-    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if polygon_end_3.status == STARTED and t >= frameRemains:
-        polygon_end_3.setAutoDraw(False)
-    
-    # *end_text_3* updates
-    if t >= 0.0 and end_text_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        end_text_3.tStart = t
-        end_text_3.frameNStart = frameN  # exact frame index
-        end_text_3.setAutoDraw(True)
-    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if end_text_3.status == STARTED and t >= frameRemains:
-        end_text_3.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in end_3Components:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "end_3"-------
-for thisComponent in end_3Components:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-child.sendline('\r')
 
 
 

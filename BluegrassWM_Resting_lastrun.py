@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 21, 2019, at 16:56
+    on March 21, 2019, at 18:03
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -142,6 +142,27 @@ fixationImage10 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
 
 # Initialize components for Routine "EyesOpen"
 EyesOpenClock = core.Clock()
@@ -226,6 +247,27 @@ fixationImage10 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-1.0)
+text = visual.TextStim(win=win, name='text',
+    text='3 . . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+text_2 = visual.TextStim(win=win, name='text_2',
+    text='2 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-3.0);
+text_3 = visual.TextStim(win=win, name='text_3',
+    text='1 . .',
+    font='Arial',
+    pos=(0, -0.7), height=0.3, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
 
 # Initialize components for Routine "EyesClose"
 EyesCloseClock = core.Clock()
@@ -433,7 +475,7 @@ routineTimer.add(10.000000)
 # update component parameters for each repeat
 fixationImage10.setSize(pictureSize)
 # keep track of which components have finished
-Fixation10Components = [fixation10, fixationImage10]
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
 for thisComponent in Fixation10Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -464,6 +506,36 @@ while continueRoutine and routineTimer.getTime() > 0:
     frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
     if fixationImage10.status == STARTED and t >= frameRemains:
         fixationImage10.setAutoDraw(False)
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or event.getKeys(keyList=["escape"]):
@@ -740,7 +812,7 @@ routineTimer.add(10.000000)
 # update component parameters for each repeat
 fixationImage10.setSize(pictureSize)
 # keep track of which components have finished
-Fixation10Components = [fixation10, fixationImage10]
+Fixation10Components = [fixation10, fixationImage10, text, text_2, text_3]
 for thisComponent in Fixation10Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -771,6 +843,36 @@ while continueRoutine and routineTimer.getTime() > 0:
     frameRemains = 0.0 + 10.0- win.monitorFramePeriod * 0.75  # most of one frame period left
     if fixationImage10.status == STARTED and t >= frameRemains:
         fixationImage10.setAutoDraw(False)
+    
+    # *text* updates
+    if t >= 7.0 and text.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text.tStart = t
+        text.frameNStart = frameN  # exact frame index
+        text.setAutoDraw(True)
+    frameRemains = 7.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text.status == STARTED and t >= frameRemains:
+        text.setAutoDraw(False)
+    
+    # *text_2* updates
+    if t >= 8.0 and text_2.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_2.tStart = t
+        text_2.frameNStart = frameN  # exact frame index
+        text_2.setAutoDraw(True)
+    frameRemains = 8.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_2.status == STARTED and t >= frameRemains:
+        text_2.setAutoDraw(False)
+    
+    # *text_3* updates
+    if t >= 9.0 and text_3.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        text_3.tStart = t
+        text_3.frameNStart = frameN  # exact frame index
+        text_3.setAutoDraw(True)
+    frameRemains = 9.0 + 1.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if text_3.status == STARTED and t >= frameRemains:
+        text_3.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or event.getKeys(keyList=["escape"]):
