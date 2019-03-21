@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 11, 2019, at 15:30
+    on March 21, 2019, at 16:59
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -546,17 +546,10 @@ greenProc_4 = visual.Rect(
 ProcTarget_4 = visual.ImageStim(
     win=win, name='ProcTarget_4',
     image='sin', mask=None,
-    ori=0, pos=(-0.4, 0), size=1.0,
+    ori=0, pos=(0, 0), size=1.0,
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
-ProcPicture_4 = visual.ImageStim(
-    win=win, name='ProcPicture_4',
-    image='sin', mask=None,
-    ori=0, pos=(0.4, 0), size=1.0,
-    color=[1,1,1], colorSpace='rgb', opacity=1,
-    flipHoriz=False, flipVert=False,
-    texRes=128, interpolate=True, depth=-3.0)
 
 
 # Initialize components for Routine "waitInterTrial_4"
@@ -2687,14 +2680,12 @@ continueRoutine = True
 routineTimer.add(90.000000)
 # update component parameters for each repeat
 greenProc_4.setSize(greenSize)
-ProcTarget_4.setSize(pictureSize)
-ProcTarget_4.setImage('./stimuli/images/086.bmp')
-ProcPicture_4.setSize(pictureSize)
-ProcPicture_4.setImage('./stimuli/images/086.bmp')
+ProcTarget_4.setSize(greenSize)
+ProcTarget_4.setImage('./stimuli/images/ocean.jpg')
 # Send trial onset marker to LSL
 outlet.push_sample('c')
 # keep track of which components have finished
-EyesCloseComponents = [blackProc_4, greenProc_4, ProcTarget_4, ProcPicture_4]
+EyesCloseComponents = [blackProc_4, greenProc_4, ProcTarget_4]
 for thisComponent in EyesCloseComponents:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
@@ -2735,16 +2726,6 @@ while continueRoutine and routineTimer.getTime() > 0:
     frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
     if ProcTarget_4.status == STARTED and t >= frameRemains:
         ProcTarget_4.setAutoDraw(False)
-    
-    # *ProcPicture_4* updates
-    if t >= 0.0 and ProcPicture_4.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcPicture_4.tStart = t
-        ProcPicture_4.frameNStart = frameN  # exact frame index
-        ProcPicture_4.setAutoDraw(True)
-    frameRemains = 0.0 + 90- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcPicture_4.status == STARTED and t >= frameRemains:
-        ProcPicture_4.setAutoDraw(False)
     
     
     # check for quit (typically the Esc key)
