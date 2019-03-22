@@ -1365,7 +1365,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="child.sendline('\r')" valType="extendedCode"/>
         <Param name="name" updates="None" val="code_20" valType="code"/>
       </CodeComponent>
     </Routine>
@@ -1866,7 +1866,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="child.sendline('\r')" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="name" updates="None" val="code_26" valType="code"/>
       </CodeComponent>
     </Routine>

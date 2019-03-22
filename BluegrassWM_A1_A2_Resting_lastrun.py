@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 21, 2019, at 18:24
+    on March 21, 2019, at 22:57
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1547,7 +1547,7 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in end_3Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-child.sendline('\r')
+
 
 # ------Prepare to start Routine "description"-------
 t = 0
@@ -3087,7 +3087,7 @@ while continueRoutine and routineTimer.getTime() > 0:
 for thisComponent in end_2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-
+child.sendline('\r')
 
 
 
