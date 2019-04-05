@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on March 22, 2019, at 10:15
+    on April 05, 2019, at 18:03
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='D:\\Projects\\BluegrassWMPlatform_Psychopy\\BluegrassWM_Practice_Resting_A1_A2_lastrun.py',
+    originPath='D:\\Projects\\Psychopy_BluegrassWMPlatform\\BluegrassWM_Practice_Resting_A1_A2_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -71,8 +71,8 @@ else:
 initiation_practiceClock = core.Clock()
 
 
-# Initialize components for Routine "description_practice"
-description_practiceClock = core.Clock()
+# Initialize components for Routine "description_practice_1"
+description_practice_1Clock = core.Clock()
 polygon_5 = visual.Rect(
     win=win, name='polygon_5',
     width=(2, 2)[0], height=(2, 2)[1],
@@ -81,7 +81,41 @@ polygon_5 = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 descriptionText_5 = visual.TextStim(win=win, name='descriptionText_5',
-    text='Practice\nPlease determine whether each image matches one of the images shown with a green border. \nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\nPRESS THE SPACEBAR WHEN READY',
+    text='Practice\nPlease determine whether each image matches one of the images shown with a green border. \n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_practice_2"
+description_practice_2Clock = core.Clock()
+polygon_6 = visual.Rect(
+    win=win, name='polygon_6',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_6 = visual.TextStim(win=win, name='descriptionText_6',
+    text='Practice\n\nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_practice_3"
+description_practice_3Clock = core.Clock()
+polygon_7 = visual.Rect(
+    win=win, name='polygon_7',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_7 = visual.TextStim(win=win, name='descriptionText_7',
+    text='Practice\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\n\n\nPress SPACEBAR to continue',
     font='Arial',
     pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -262,8 +296,8 @@ end_text_4 = visual.TextStim(win=win, name='end_text_4',
 initiationClock = core.Clock()
 
 
-# Initialize components for Routine "desEyesOpen"
-desEyesOpenClock = core.Clock()
+# Initialize components for Routine "desEyesOpen_1"
+desEyesOpen_1Clock = core.Clock()
 polygon_3 = visual.Rect(
     win=win, name='polygon_3',
     width=(2, 2)[0], height=(2, 2)[1],
@@ -272,7 +306,41 @@ polygon_3 = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 descriptionText_3 = visual.TextStim(win=win, name='descriptionText_3',
-    text='Eyes open for one minute\nPlease stare at fixation point\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
+    text='Eyes open for one minute\nPlease stare at fixation point\n\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "desEyesOpen_2"
+desEyesOpen_2Clock = core.Clock()
+polygon_8 = visual.Rect(
+    win=win, name='polygon_8',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_8 = visual.TextStim(win=win, name='descriptionText_8',
+    text='Try not to blink during this time\n\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "desEyesOpen_3"
+desEyesOpen_3Clock = core.Clock()
+polygon_9 = visual.Rect(
+    win=win, name='polygon_9',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_9 = visual.TextStim(win=win, name='descriptionText_9',
+    text='Try to be as still as possible\n\nWe will come in as soon as minute is up\n\n\n\n\nPress SPACEBAR to continue',
     font='Arial',
     pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -368,8 +436,8 @@ whiteWaitInterTrial_5 = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-2.0)
 
-# Initialize components for Routine "desEyesClose"
-desEyesCloseClock = core.Clock()
+# Initialize components for Routine "desEyesClose_1"
+desEyesClose_1Clock = core.Clock()
 polygon_4 = visual.Rect(
     win=win, name='polygon_4',
     width=(2, 2)[0], height=(2, 2)[1],
@@ -378,7 +446,41 @@ polygon_4 = visual.Rect(
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 descriptionText_4 = visual.TextStim(win=win, name='descriptionText_4',
-    text='Eyes close for one minute\n\nTry not to blink during this time\n\nTry to be as still as possible\n\nWe will come in as soon as minute is up',
+    text='Eyes close for one minute\n\n\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "desEyesClose_2"
+desEyesClose_2Clock = core.Clock()
+polygon_10 = visual.Rect(
+    win=win, name='polygon_10',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_10 = visual.TextStim(win=win, name='descriptionText_10',
+    text='Try not to blink during this time\n\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "desEyesClose_3"
+desEyesClose_3Clock = core.Clock()
+polygon_11 = visual.Rect(
+    win=win, name='polygon_11',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_11 = visual.TextStim(win=win, name='descriptionText_11',
+    text='Try to be as still as possible\n\nWe will come in as soon as minute is up\n\n\n\n\nPress SPACEBAR to continue',
     font='Arial',
     pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -485,17 +587,51 @@ end_text_3 = visual.TextStim(win=win, name='end_text_3',
     depth=-1.0);
 
 
-# Initialize components for Routine "description"
-descriptionClock = core.Clock()
-polygon = visual.Rect(
-    win=win, name='polygon',
+# Initialize components for Routine "description_A1_1"
+description_A1_1Clock = core.Clock()
+polygon_12 = visual.Rect(
+    win=win, name='polygon_12',
     width=(2, 2)[0], height=(2, 2)[1],
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor='black', lineColorSpace='rgb',
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-descriptionText = visual.TextStim(win=win, name='descriptionText',
-    text='A1\nPlease determine whether each image matches one of the images shown with a green border. \nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\nPRESS THE SPACEBAR WHEN READY',
+descriptionText_12 = visual.TextStim(win=win, name='descriptionText_12',
+    text='A1\nPlease determine whether each image matches one of the images shown with a green border. \n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_A1_2"
+description_A1_2Clock = core.Clock()
+polygon_13 = visual.Rect(
+    win=win, name='polygon_13',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_13 = visual.TextStim(win=win, name='descriptionText_13',
+    text='A1\n\nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_A1_3"
+description_A1_3Clock = core.Clock()
+polygon_14 = visual.Rect(
+    win=win, name='polygon_14',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_14 = visual.TextStim(win=win, name='descriptionText_14',
+    text='A1\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\n\n\nPress SPACEBAR to continue',
     font='Arial',
     pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -676,17 +812,51 @@ end_text = visual.TextStim(win=win, name='end_text',
 initiation_2Clock = core.Clock()
 
 
-# Initialize components for Routine "description_2"
-description_2Clock = core.Clock()
-polygon_2 = visual.Rect(
-    win=win, name='polygon_2',
+# Initialize components for Routine "description_A2_1"
+description_A2_1Clock = core.Clock()
+polygon_15 = visual.Rect(
+    win=win, name='polygon_15',
     width=(2, 2)[0], height=(2, 2)[1],
     ori=0, pos=(0, 0),
     lineWidth=1, lineColor='black', lineColorSpace='rgb',
     fillColor='black', fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-descriptionText_2 = visual.TextStim(win=win, name='descriptionText_2',
-    text='A2\nPlease determine whether each image matches one of the images shown with a green border. \nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\nPRESS THE SPACEBAR WHEN READY',
+descriptionText_15 = visual.TextStim(win=win, name='descriptionText_15',
+    text='A2\nPlease determine whether each image matches one of the images shown with a green border. \n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_A2_2"
+description_A2_2Clock = core.Clock()
+polygon_16 = visual.Rect(
+    win=win, name='polygon_16',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_16 = visual.TextStim(win=win, name='descriptionText_16',
+    text='A2\n\nIf it matches,\nplease quickly press the A (L) key.\nIf it does not,\nplease quickly press the L (A) key.\n\n\n\nPress SPACEBAR to continue',
+    font='Arial',
+    pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+
+# Initialize components for Routine "description_A2_3"
+description_A2_3Clock = core.Clock()
+polygon_17 = visual.Rect(
+    win=win, name='polygon_17',
+    width=(2, 2)[0], height=(2, 2)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor='black', lineColorSpace='rgb',
+    fillColor='black', fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+descriptionText_17 = visual.TextStim(win=win, name='descriptionText_17',
+    text='A2\n\nIf a cross (+) appears appears,\nplease quickly press both keys.\n\n\n\nPress SPACEBAR to continue',
     font='Arial',
     pos=(0, 0), height=0.09, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -957,23 +1127,23 @@ for thisComponent in initiation_practiceComponents:
 # the Routine "initiation_practice" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "description_practice"-------
+# ------Prepare to start Routine "description_practice_1"-------
 t = 0
-description_practiceClock.reset()  # clock
+description_practice_1Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 keyPressRun_5 = event.BuilderKeyResponse()
 # keep track of which components have finished
-description_practiceComponents = [polygon_5, descriptionText_5, keyPressRun_5]
-for thisComponent in description_practiceComponents:
+description_practice_1Components = [polygon_5, descriptionText_5, keyPressRun_5]
+for thisComponent in description_practice_1Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "description_practice"-------
+# -------Start Routine "description_practice_1"-------
 while continueRoutine:
     # get current time
-    t = description_practiceClock.getTime()
+    t = description_practice_1Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
@@ -1020,7 +1190,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in description_practiceComponents:
+    for thisComponent in description_practice_1Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -1029,8 +1199,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "description_practice"-------
-for thisComponent in description_practiceComponents:
+# -------Ending Routine "description_practice_1"-------
+for thisComponent in description_practice_1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -1040,7 +1210,179 @@ thisExp.addData('keyPressRun_5.keys',keyPressRun_5.keys)
 if keyPressRun_5.keys != None:  # we had a response
     thisExp.addData('keyPressRun_5.rt', keyPressRun_5.rt)
 thisExp.nextEntry()
-# the Routine "description_practice" was not non-slip safe, so reset the non-slip timer
+# the Routine "description_practice_1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_practice_2"-------
+t = 0
+description_practice_2Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_6 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_practice_2Components = [polygon_6, descriptionText_6, keyPressRun_6]
+for thisComponent in description_practice_2Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_practice_2"-------
+while continueRoutine:
+    # get current time
+    t = description_practice_2Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_6* updates
+    if t >= 0.0 and polygon_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_6.tStart = t
+        polygon_6.frameNStart = frameN  # exact frame index
+        polygon_6.setAutoDraw(True)
+    
+    # *descriptionText_6* updates
+    if t >= 0.0 and descriptionText_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_6.tStart = t
+        descriptionText_6.frameNStart = frameN  # exact frame index
+        descriptionText_6.setAutoDraw(True)
+    
+    # *keyPressRun_6* updates
+    if t >= 0.0 and keyPressRun_6.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_6.tStart = t
+        keyPressRun_6.frameNStart = frameN  # exact frame index
+        keyPressRun_6.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_6.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_6.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_6.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_6.rt = keyPressRun_6.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_practice_2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_practice_2"-------
+for thisComponent in description_practice_2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_6.keys in ['', [], None]:  # No response was made
+    keyPressRun_6.keys=None
+thisExp.addData('keyPressRun_6.keys',keyPressRun_6.keys)
+if keyPressRun_6.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_6.rt', keyPressRun_6.rt)
+thisExp.nextEntry()
+# the Routine "description_practice_2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_practice_3"-------
+t = 0
+description_practice_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_7 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_practice_3Components = [polygon_7, descriptionText_7, keyPressRun_7]
+for thisComponent in description_practice_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_practice_3"-------
+while continueRoutine:
+    # get current time
+    t = description_practice_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_7* updates
+    if t >= 0.0 and polygon_7.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_7.tStart = t
+        polygon_7.frameNStart = frameN  # exact frame index
+        polygon_7.setAutoDraw(True)
+    
+    # *descriptionText_7* updates
+    if t >= 0.0 and descriptionText_7.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_7.tStart = t
+        descriptionText_7.frameNStart = frameN  # exact frame index
+        descriptionText_7.setAutoDraw(True)
+    
+    # *keyPressRun_7* updates
+    if t >= 0.0 and keyPressRun_7.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_7.tStart = t
+        keyPressRun_7.frameNStart = frameN  # exact frame index
+        keyPressRun_7.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_7.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_7.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_7.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_7.rt = keyPressRun_7.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_practice_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_practice_3"-------
+for thisComponent in description_practice_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_7.keys in ['', [], None]:  # No response was made
+    keyPressRun_7.keys=None
+thisExp.addData('keyPressRun_7.keys',keyPressRun_7.keys)
+if keyPressRun_7.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_7.rt', keyPressRun_7.rt)
+thisExp.nextEntry()
+# the Routine "description_practice_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "Fixation10"-------
@@ -1777,23 +2119,23 @@ for thisComponent in initiationComponents:
 # the Routine "initiation" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "desEyesOpen"-------
+# ------Prepare to start Routine "desEyesOpen_1"-------
 t = 0
-desEyesOpenClock.reset()  # clock
+desEyesOpen_1Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 keyPressRun_3 = event.BuilderKeyResponse()
 # keep track of which components have finished
-desEyesOpenComponents = [polygon_3, descriptionText_3, keyPressRun_3]
-for thisComponent in desEyesOpenComponents:
+desEyesOpen_1Components = [polygon_3, descriptionText_3, keyPressRun_3]
+for thisComponent in desEyesOpen_1Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "desEyesOpen"-------
+# -------Start Routine "desEyesOpen_1"-------
 while continueRoutine:
     # get current time
-    t = desEyesOpenClock.getTime()
+    t = desEyesOpen_1Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
@@ -1840,7 +2182,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in desEyesOpenComponents:
+    for thisComponent in desEyesOpen_1Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -1849,8 +2191,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "desEyesOpen"-------
-for thisComponent in desEyesOpenComponents:
+# -------Ending Routine "desEyesOpen_1"-------
+for thisComponent in desEyesOpen_1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -1860,7 +2202,179 @@ thisExp.addData('keyPressRun_3.keys',keyPressRun_3.keys)
 if keyPressRun_3.keys != None:  # we had a response
     thisExp.addData('keyPressRun_3.rt', keyPressRun_3.rt)
 thisExp.nextEntry()
-# the Routine "desEyesOpen" was not non-slip safe, so reset the non-slip timer
+# the Routine "desEyesOpen_1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "desEyesOpen_2"-------
+t = 0
+desEyesOpen_2Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_8 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesOpen_2Components = [polygon_8, descriptionText_8, keyPressRun_8]
+for thisComponent in desEyesOpen_2Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesOpen_2"-------
+while continueRoutine:
+    # get current time
+    t = desEyesOpen_2Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_8* updates
+    if t >= 0.0 and polygon_8.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_8.tStart = t
+        polygon_8.frameNStart = frameN  # exact frame index
+        polygon_8.setAutoDraw(True)
+    
+    # *descriptionText_8* updates
+    if t >= 0.0 and descriptionText_8.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_8.tStart = t
+        descriptionText_8.frameNStart = frameN  # exact frame index
+        descriptionText_8.setAutoDraw(True)
+    
+    # *keyPressRun_8* updates
+    if t >= 0.0 and keyPressRun_8.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_8.tStart = t
+        keyPressRun_8.frameNStart = frameN  # exact frame index
+        keyPressRun_8.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_8.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_8.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_8.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_8.rt = keyPressRun_8.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesOpen_2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesOpen_2"-------
+for thisComponent in desEyesOpen_2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_8.keys in ['', [], None]:  # No response was made
+    keyPressRun_8.keys=None
+thisExp.addData('keyPressRun_8.keys',keyPressRun_8.keys)
+if keyPressRun_8.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_8.rt', keyPressRun_8.rt)
+thisExp.nextEntry()
+# the Routine "desEyesOpen_2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "desEyesOpen_3"-------
+t = 0
+desEyesOpen_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_9 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesOpen_3Components = [polygon_9, descriptionText_9, keyPressRun_9]
+for thisComponent in desEyesOpen_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesOpen_3"-------
+while continueRoutine:
+    # get current time
+    t = desEyesOpen_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_9* updates
+    if t >= 0.0 and polygon_9.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_9.tStart = t
+        polygon_9.frameNStart = frameN  # exact frame index
+        polygon_9.setAutoDraw(True)
+    
+    # *descriptionText_9* updates
+    if t >= 0.0 and descriptionText_9.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_9.tStart = t
+        descriptionText_9.frameNStart = frameN  # exact frame index
+        descriptionText_9.setAutoDraw(True)
+    
+    # *keyPressRun_9* updates
+    if t >= 0.0 and keyPressRun_9.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_9.tStart = t
+        keyPressRun_9.frameNStart = frameN  # exact frame index
+        keyPressRun_9.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_9.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_9.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_9.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_9.rt = keyPressRun_9.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesOpen_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesOpen_3"-------
+for thisComponent in desEyesOpen_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_9.keys in ['', [], None]:  # No response was made
+    keyPressRun_9.keys=None
+thisExp.addData('keyPressRun_9.keys',keyPressRun_9.keys)
+if keyPressRun_9.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_9.rt', keyPressRun_9.rt)
+thisExp.nextEntry()
+# the Routine "desEyesOpen_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "Fixation10"-------
@@ -2117,23 +2631,23 @@ for thisComponent in waitInterTrial_3Components:
         thisComponent.setAutoDraw(False)
 
 
-# ------Prepare to start Routine "desEyesClose"-------
+# ------Prepare to start Routine "desEyesClose_1"-------
 t = 0
-desEyesCloseClock.reset()  # clock
+desEyesClose_1Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
 keyPressRun_4 = event.BuilderKeyResponse()
 # keep track of which components have finished
-desEyesCloseComponents = [polygon_4, descriptionText_4, keyPressRun_4]
-for thisComponent in desEyesCloseComponents:
+desEyesClose_1Components = [polygon_4, descriptionText_4, keyPressRun_4]
+for thisComponent in desEyesClose_1Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "desEyesClose"-------
+# -------Start Routine "desEyesClose_1"-------
 while continueRoutine:
     # get current time
-    t = desEyesCloseClock.getTime()
+    t = desEyesClose_1Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
@@ -2180,7 +2694,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in desEyesCloseComponents:
+    for thisComponent in desEyesClose_1Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -2189,8 +2703,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "desEyesClose"-------
-for thisComponent in desEyesCloseComponents:
+# -------Ending Routine "desEyesClose_1"-------
+for thisComponent in desEyesClose_1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
@@ -2200,7 +2714,179 @@ thisExp.addData('keyPressRun_4.keys',keyPressRun_4.keys)
 if keyPressRun_4.keys != None:  # we had a response
     thisExp.addData('keyPressRun_4.rt', keyPressRun_4.rt)
 thisExp.nextEntry()
-# the Routine "desEyesClose" was not non-slip safe, so reset the non-slip timer
+# the Routine "desEyesClose_1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "desEyesClose_2"-------
+t = 0
+desEyesClose_2Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_10 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesClose_2Components = [polygon_10, descriptionText_10, keyPressRun_10]
+for thisComponent in desEyesClose_2Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesClose_2"-------
+while continueRoutine:
+    # get current time
+    t = desEyesClose_2Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_10* updates
+    if t >= 0.0 and polygon_10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_10.tStart = t
+        polygon_10.frameNStart = frameN  # exact frame index
+        polygon_10.setAutoDraw(True)
+    
+    # *descriptionText_10* updates
+    if t >= 0.0 and descriptionText_10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_10.tStart = t
+        descriptionText_10.frameNStart = frameN  # exact frame index
+        descriptionText_10.setAutoDraw(True)
+    
+    # *keyPressRun_10* updates
+    if t >= 0.0 and keyPressRun_10.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_10.tStart = t
+        keyPressRun_10.frameNStart = frameN  # exact frame index
+        keyPressRun_10.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_10.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_10.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_10.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_10.rt = keyPressRun_10.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesClose_2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesClose_2"-------
+for thisComponent in desEyesClose_2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_10.keys in ['', [], None]:  # No response was made
+    keyPressRun_10.keys=None
+thisExp.addData('keyPressRun_10.keys',keyPressRun_10.keys)
+if keyPressRun_10.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_10.rt', keyPressRun_10.rt)
+thisExp.nextEntry()
+# the Routine "desEyesClose_2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "desEyesClose_3"-------
+t = 0
+desEyesClose_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_11 = event.BuilderKeyResponse()
+# keep track of which components have finished
+desEyesClose_3Components = [polygon_11, descriptionText_11, keyPressRun_11]
+for thisComponent in desEyesClose_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "desEyesClose_3"-------
+while continueRoutine:
+    # get current time
+    t = desEyesClose_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_11* updates
+    if t >= 0.0 and polygon_11.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_11.tStart = t
+        polygon_11.frameNStart = frameN  # exact frame index
+        polygon_11.setAutoDraw(True)
+    
+    # *descriptionText_11* updates
+    if t >= 0.0 and descriptionText_11.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_11.tStart = t
+        descriptionText_11.frameNStart = frameN  # exact frame index
+        descriptionText_11.setAutoDraw(True)
+    
+    # *keyPressRun_11* updates
+    if t >= 0.0 and keyPressRun_11.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_11.tStart = t
+        keyPressRun_11.frameNStart = frameN  # exact frame index
+        keyPressRun_11.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_11.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_11.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_11.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_11.rt = keyPressRun_11.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in desEyesClose_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "desEyesClose_3"-------
+for thisComponent in desEyesClose_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_11.keys in ['', [], None]:  # No response was made
+    keyPressRun_11.keys=None
+thisExp.addData('keyPressRun_11.keys',keyPressRun_11.keys)
+if keyPressRun_11.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_11.rt', keyPressRun_11.rt)
+thisExp.nextEntry()
+# the Routine "desEyesClose_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "Fixation10"-------
@@ -2512,58 +3198,58 @@ for thisComponent in end_3Components:
         thisComponent.setAutoDraw(False)
 
 
-# ------Prepare to start Routine "description"-------
+# ------Prepare to start Routine "description_A1_1"-------
 t = 0
-descriptionClock.reset()  # clock
+description_A1_1Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
-keyPressRun = event.BuilderKeyResponse()
+keyPressRun_12 = event.BuilderKeyResponse()
 # keep track of which components have finished
-descriptionComponents = [polygon, descriptionText, keyPressRun]
-for thisComponent in descriptionComponents:
+description_A1_1Components = [polygon_12, descriptionText_12, keyPressRun_12]
+for thisComponent in description_A1_1Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "description"-------
+# -------Start Routine "description_A1_1"-------
 while continueRoutine:
     # get current time
-    t = descriptionClock.getTime()
+    t = description_A1_1Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *polygon* updates
-    if t >= 0.0 and polygon.status == NOT_STARTED:
+    # *polygon_12* updates
+    if t >= 0.0 and polygon_12.status == NOT_STARTED:
         # keep track of start time/frame for later
-        polygon.tStart = t
-        polygon.frameNStart = frameN  # exact frame index
-        polygon.setAutoDraw(True)
+        polygon_12.tStart = t
+        polygon_12.frameNStart = frameN  # exact frame index
+        polygon_12.setAutoDraw(True)
     
-    # *descriptionText* updates
-    if t >= 0.0 and descriptionText.status == NOT_STARTED:
+    # *descriptionText_12* updates
+    if t >= 0.0 and descriptionText_12.status == NOT_STARTED:
         # keep track of start time/frame for later
-        descriptionText.tStart = t
-        descriptionText.frameNStart = frameN  # exact frame index
-        descriptionText.setAutoDraw(True)
+        descriptionText_12.tStart = t
+        descriptionText_12.frameNStart = frameN  # exact frame index
+        descriptionText_12.setAutoDraw(True)
     
-    # *keyPressRun* updates
-    if t >= 0.0 and keyPressRun.status == NOT_STARTED:
+    # *keyPressRun_12* updates
+    if t >= 0.0 and keyPressRun_12.status == NOT_STARTED:
         # keep track of start time/frame for later
-        keyPressRun.tStart = t
-        keyPressRun.frameNStart = frameN  # exact frame index
-        keyPressRun.status = STARTED
+        keyPressRun_12.tStart = t
+        keyPressRun_12.frameNStart = frameN  # exact frame index
+        keyPressRun_12.status = STARTED
         # keyboard checking is just starting
-        keyPressRun.clock.reset()  # now t=0
+        keyPressRun_12.clock.reset()  # now t=0
         event.clearEvents(eventType='keyboard')
-    if keyPressRun.status == STARTED:
+    if keyPressRun_12.status == STARTED:
         theseKeys = event.getKeys(keyList=['space'])
         
         # check for quit:
         if "escape" in theseKeys:
             endExpNow = True
         if len(theseKeys) > 0:  # at least one key was pressed
-            keyPressRun.keys = theseKeys[-1]  # just the last key pressed
-            keyPressRun.rt = keyPressRun.clock.getTime()
+            keyPressRun_12.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_12.rt = keyPressRun_12.clock.getTime()
             # a response ends the routine
             continueRoutine = False
     
@@ -2575,7 +3261,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in descriptionComponents:
+    for thisComponent in description_A1_1Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -2584,18 +3270,190 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "description"-------
-for thisComponent in descriptionComponents:
+# -------Ending Routine "description_A1_1"-------
+for thisComponent in description_A1_1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
-if keyPressRun.keys in ['', [], None]:  # No response was made
-    keyPressRun.keys=None
-thisExp.addData('keyPressRun.keys',keyPressRun.keys)
-if keyPressRun.keys != None:  # we had a response
-    thisExp.addData('keyPressRun.rt', keyPressRun.rt)
+if keyPressRun_12.keys in ['', [], None]:  # No response was made
+    keyPressRun_12.keys=None
+thisExp.addData('keyPressRun_12.keys',keyPressRun_12.keys)
+if keyPressRun_12.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_12.rt', keyPressRun_12.rt)
 thisExp.nextEntry()
-# the Routine "description" was not non-slip safe, so reset the non-slip timer
+# the Routine "description_A1_1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_A1_2"-------
+t = 0
+description_A1_2Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_13 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_A1_2Components = [polygon_13, descriptionText_13, keyPressRun_13]
+for thisComponent in description_A1_2Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_A1_2"-------
+while continueRoutine:
+    # get current time
+    t = description_A1_2Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_13* updates
+    if t >= 0.0 and polygon_13.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_13.tStart = t
+        polygon_13.frameNStart = frameN  # exact frame index
+        polygon_13.setAutoDraw(True)
+    
+    # *descriptionText_13* updates
+    if t >= 0.0 and descriptionText_13.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_13.tStart = t
+        descriptionText_13.frameNStart = frameN  # exact frame index
+        descriptionText_13.setAutoDraw(True)
+    
+    # *keyPressRun_13* updates
+    if t >= 0.0 and keyPressRun_13.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_13.tStart = t
+        keyPressRun_13.frameNStart = frameN  # exact frame index
+        keyPressRun_13.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_13.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_13.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_13.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_13.rt = keyPressRun_13.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_A1_2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_A1_2"-------
+for thisComponent in description_A1_2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_13.keys in ['', [], None]:  # No response was made
+    keyPressRun_13.keys=None
+thisExp.addData('keyPressRun_13.keys',keyPressRun_13.keys)
+if keyPressRun_13.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_13.rt', keyPressRun_13.rt)
+thisExp.nextEntry()
+# the Routine "description_A1_2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_A1_3"-------
+t = 0
+description_A1_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_14 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_A1_3Components = [polygon_14, descriptionText_14, keyPressRun_14]
+for thisComponent in description_A1_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_A1_3"-------
+while continueRoutine:
+    # get current time
+    t = description_A1_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_14* updates
+    if t >= 0.0 and polygon_14.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_14.tStart = t
+        polygon_14.frameNStart = frameN  # exact frame index
+        polygon_14.setAutoDraw(True)
+    
+    # *descriptionText_14* updates
+    if t >= 0.0 and descriptionText_14.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_14.tStart = t
+        descriptionText_14.frameNStart = frameN  # exact frame index
+        descriptionText_14.setAutoDraw(True)
+    
+    # *keyPressRun_14* updates
+    if t >= 0.0 and keyPressRun_14.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_14.tStart = t
+        keyPressRun_14.frameNStart = frameN  # exact frame index
+        keyPressRun_14.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_14.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_14.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_14.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_14.rt = keyPressRun_14.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_A1_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_A1_3"-------
+for thisComponent in description_A1_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_14.keys in ['', [], None]:  # No response was made
+    keyPressRun_14.keys=None
+thisExp.addData('keyPressRun_14.keys',keyPressRun_14.keys)
+if keyPressRun_14.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_14.rt', keyPressRun_14.rt)
+thisExp.nextEntry()
+# the Routine "description_A1_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "Fixation10"-------
@@ -3323,58 +4181,58 @@ for thisComponent in initiation_2Components:
 # the Routine "initiation_2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "description_2"-------
+# ------Prepare to start Routine "description_A2_1"-------
 t = 0
-description_2Clock.reset()  # clock
+description_A2_1Clock.reset()  # clock
 frameN = -1
 continueRoutine = True
 # update component parameters for each repeat
-keyPressRun_2 = event.BuilderKeyResponse()
+keyPressRun_15 = event.BuilderKeyResponse()
 # keep track of which components have finished
-description_2Components = [polygon_2, descriptionText_2, keyPressRun_2]
-for thisComponent in description_2Components:
+description_A2_1Components = [polygon_15, descriptionText_15, keyPressRun_15]
+for thisComponent in description_A2_1Components:
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
-# -------Start Routine "description_2"-------
+# -------Start Routine "description_A2_1"-------
 while continueRoutine:
     # get current time
-    t = description_2Clock.getTime()
+    t = description_A2_1Clock.getTime()
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *polygon_2* updates
-    if t >= 0.0 and polygon_2.status == NOT_STARTED:
+    # *polygon_15* updates
+    if t >= 0.0 and polygon_15.status == NOT_STARTED:
         # keep track of start time/frame for later
-        polygon_2.tStart = t
-        polygon_2.frameNStart = frameN  # exact frame index
-        polygon_2.setAutoDraw(True)
+        polygon_15.tStart = t
+        polygon_15.frameNStart = frameN  # exact frame index
+        polygon_15.setAutoDraw(True)
     
-    # *descriptionText_2* updates
-    if t >= 0.0 and descriptionText_2.status == NOT_STARTED:
+    # *descriptionText_15* updates
+    if t >= 0.0 and descriptionText_15.status == NOT_STARTED:
         # keep track of start time/frame for later
-        descriptionText_2.tStart = t
-        descriptionText_2.frameNStart = frameN  # exact frame index
-        descriptionText_2.setAutoDraw(True)
+        descriptionText_15.tStart = t
+        descriptionText_15.frameNStart = frameN  # exact frame index
+        descriptionText_15.setAutoDraw(True)
     
-    # *keyPressRun_2* updates
-    if t >= 0.0 and keyPressRun_2.status == NOT_STARTED:
+    # *keyPressRun_15* updates
+    if t >= 0.0 and keyPressRun_15.status == NOT_STARTED:
         # keep track of start time/frame for later
-        keyPressRun_2.tStart = t
-        keyPressRun_2.frameNStart = frameN  # exact frame index
-        keyPressRun_2.status = STARTED
+        keyPressRun_15.tStart = t
+        keyPressRun_15.frameNStart = frameN  # exact frame index
+        keyPressRun_15.status = STARTED
         # keyboard checking is just starting
-        keyPressRun_2.clock.reset()  # now t=0
+        keyPressRun_15.clock.reset()  # now t=0
         event.clearEvents(eventType='keyboard')
-    if keyPressRun_2.status == STARTED:
+    if keyPressRun_15.status == STARTED:
         theseKeys = event.getKeys(keyList=['space'])
         
         # check for quit:
         if "escape" in theseKeys:
             endExpNow = True
         if len(theseKeys) > 0:  # at least one key was pressed
-            keyPressRun_2.keys = theseKeys[-1]  # just the last key pressed
-            keyPressRun_2.rt = keyPressRun_2.clock.getTime()
+            keyPressRun_15.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_15.rt = keyPressRun_15.clock.getTime()
             # a response ends the routine
             continueRoutine = False
     
@@ -3386,7 +4244,7 @@ while continueRoutine:
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
     continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in description_2Components:
+    for thisComponent in description_A2_1Components:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
@@ -3395,18 +4253,190 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "description_2"-------
-for thisComponent in description_2Components:
+# -------Ending Routine "description_A2_1"-------
+for thisComponent in description_A2_1Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # check responses
-if keyPressRun_2.keys in ['', [], None]:  # No response was made
-    keyPressRun_2.keys=None
-thisExp.addData('keyPressRun_2.keys',keyPressRun_2.keys)
-if keyPressRun_2.keys != None:  # we had a response
-    thisExp.addData('keyPressRun_2.rt', keyPressRun_2.rt)
+if keyPressRun_15.keys in ['', [], None]:  # No response was made
+    keyPressRun_15.keys=None
+thisExp.addData('keyPressRun_15.keys',keyPressRun_15.keys)
+if keyPressRun_15.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_15.rt', keyPressRun_15.rt)
 thisExp.nextEntry()
-# the Routine "description_2" was not non-slip safe, so reset the non-slip timer
+# the Routine "description_A2_1" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_A2_2"-------
+t = 0
+description_A2_2Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_16 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_A2_2Components = [polygon_16, descriptionText_16, keyPressRun_16]
+for thisComponent in description_A2_2Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_A2_2"-------
+while continueRoutine:
+    # get current time
+    t = description_A2_2Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_16* updates
+    if t >= 0.0 and polygon_16.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_16.tStart = t
+        polygon_16.frameNStart = frameN  # exact frame index
+        polygon_16.setAutoDraw(True)
+    
+    # *descriptionText_16* updates
+    if t >= 0.0 and descriptionText_16.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_16.tStart = t
+        descriptionText_16.frameNStart = frameN  # exact frame index
+        descriptionText_16.setAutoDraw(True)
+    
+    # *keyPressRun_16* updates
+    if t >= 0.0 and keyPressRun_16.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_16.tStart = t
+        keyPressRun_16.frameNStart = frameN  # exact frame index
+        keyPressRun_16.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_16.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_16.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_16.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_16.rt = keyPressRun_16.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_A2_2Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_A2_2"-------
+for thisComponent in description_A2_2Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_16.keys in ['', [], None]:  # No response was made
+    keyPressRun_16.keys=None
+thisExp.addData('keyPressRun_16.keys',keyPressRun_16.keys)
+if keyPressRun_16.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_16.rt', keyPressRun_16.rt)
+thisExp.nextEntry()
+# the Routine "description_A2_2" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# ------Prepare to start Routine "description_A2_3"-------
+t = 0
+description_A2_3Clock.reset()  # clock
+frameN = -1
+continueRoutine = True
+# update component parameters for each repeat
+keyPressRun_17 = event.BuilderKeyResponse()
+# keep track of which components have finished
+description_A2_3Components = [polygon_17, descriptionText_17, keyPressRun_17]
+for thisComponent in description_A2_3Components:
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "description_A2_3"-------
+while continueRoutine:
+    # get current time
+    t = description_A2_3Clock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *polygon_17* updates
+    if t >= 0.0 and polygon_17.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        polygon_17.tStart = t
+        polygon_17.frameNStart = frameN  # exact frame index
+        polygon_17.setAutoDraw(True)
+    
+    # *descriptionText_17* updates
+    if t >= 0.0 and descriptionText_17.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        descriptionText_17.tStart = t
+        descriptionText_17.frameNStart = frameN  # exact frame index
+        descriptionText_17.setAutoDraw(True)
+    
+    # *keyPressRun_17* updates
+    if t >= 0.0 and keyPressRun_17.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        keyPressRun_17.tStart = t
+        keyPressRun_17.frameNStart = frameN  # exact frame index
+        keyPressRun_17.status = STARTED
+        # keyboard checking is just starting
+        keyPressRun_17.clock.reset()  # now t=0
+        event.clearEvents(eventType='keyboard')
+    if keyPressRun_17.status == STARTED:
+        theseKeys = event.getKeys(keyList=['space'])
+        
+        # check for quit:
+        if "escape" in theseKeys:
+            endExpNow = True
+        if len(theseKeys) > 0:  # at least one key was pressed
+            keyPressRun_17.keys = theseKeys[-1]  # just the last key pressed
+            keyPressRun_17.rt = keyPressRun_17.clock.getTime()
+            # a response ends the routine
+            continueRoutine = False
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in description_A2_3Components:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "description_A2_3"-------
+for thisComponent in description_A2_3Components:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# check responses
+if keyPressRun_17.keys in ['', [], None]:  # No response was made
+    keyPressRun_17.keys=None
+thisExp.addData('keyPressRun_17.keys',keyPressRun_17.keys)
+if keyPressRun_17.keys != None:  # we had a response
+    thisExp.addData('keyPressRun_17.rt', keyPressRun_17.rt)
+thisExp.nextEntry()
+# the Routine "description_A2_3" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
 # ------Prepare to start Routine "Fixation10"-------
