@@ -26,7 +26,7 @@ The setup should be compatible with the latest version of PsychoPy. You can down
 LSL is a gold-standard for synchronous neurophysiological data collection and this platform is designed in a way that supports data collection using LSL protocol. Using LSL at the core of the setup makes it universal and vendor-independent.
 
 
-* Assuming installation of PsychoPy in default route, you can install pylsl using this command:
+$\qquad$ Assuming installation of PsychoPy in default route, you can install pylsl using this command:
 ```windows
 C:\Program Files (x86)\PsychoPy3>python -m pip install pylsl
 ```
