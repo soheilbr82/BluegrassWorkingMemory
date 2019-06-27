@@ -9,7 +9,7 @@ Research Assistant: Michael O'neil, moneil8 at vols.utk.edu
 
 This is achieved in collaboration with:\
 Zhao's Nonlinear Biodynamics lab, University of Tennessee, Knoxville\
-Jiang's ABC lab, University of Kentucky, Lexington\
+Jiang's ABC lab, University of Kentucky, Lexington
 
 Bluegrass Short-term Memory paradigm was originally designed by Dr. Yang Jiang.
 
