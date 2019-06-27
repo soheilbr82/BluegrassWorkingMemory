@@ -3,7 +3,7 @@
 This is a python-based implementation of Bluegrass short-term memory. The setup is able to synchronously collect behavioral, neural, and any other LSL-compatible neurophysiological signals.
 The setup can be extended to synchronously collect other types of behavioral and physiological signals (Heart rate, saccade, GSR, etc.).
 
-## Installation
+### Installation
 The setup is generally OS-independent. However, the below instruction is for Windows 10.
 
 
@@ -65,8 +65,8 @@ Resting state EEG Markers:
 ### Recording File Format
 LabRecorder record into the XDF file format (Extensible Data Format, hosted at https://github.com/sccn/xdf). XDF was designed concurrently with the lab streaming layer and supports the full feature set of LSL (including multi-stream container files, per-stream arbitrarily large XML headers, all sample formats as well as time-synchronization information).
 
-## Contributing
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
+### License
 [MIT](https://choosealicense.com/licenses/mit/)
