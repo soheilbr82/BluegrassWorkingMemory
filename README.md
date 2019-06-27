@@ -11,29 +11,39 @@ The setup is generally OS-independent. However, the below instruction is for Win
 The setup should be compatible with the latest version of PsychoPy. You can download it from [this](https://github.com/psychopy/psychopy/releases) link. Although the setup may work properly on python 2.7, I recommend using standalone PsychoPy with python 3.
 
 
-2. Install pylsl for recording labstreaminglayer (LSL) streams.
+
+2. Install <font color="red">pylsl</font> for recording labstreaminglayer (LSL) streams.
 LSL is a gold-standard for synchronous neurophysiological data collection and this platform is designed in a way that supports data collection using LSL protocol. Using LSL at the core of the setup makes it universal and vendor-independent.
 
-Assuming installation of PsychoPy in default route, you can install LSL using this command:
+
+Assuming installation of PsychoPy in default route, you can install <font color="red">pylsl</font> using this command:
 ```windows
-C:\Program Files (x86)\PsychoPy3>python -m pip install pylsl
+C:\Program Files (x86)\PsychoPy3>python -m pip install <font color="red">pylsl</font>
 ```
 
-3. Install (win)pexpect for seamlessly start and stop LSL data recording.
-LabRecorder collects neurophysiological signal streams in LSL seamlessly in the background. We need (win)pexpect library to call LabRecorder.
 
-You may need administrator privilege for installing the package. Assuming installation of PsychoPy in default route, you can install (win)pexpect using this command:
+
+3. Install <font color="red">(win)pexpect</font> for seamlessly start and stop LSL data recording.
+LabRecorder collects neurophysiological signal streams in LSL seamlessly in the background. We need <font color="red">(win)pexpect</font> library to call LabRecorder.
+
+
+You may need administrator privilege for installing the package. Assuming installation of PsychoPy in default route, you can install <font color="red">(win)pexpect</font> using this command:
 ```windows
-C:\Program Files (x86)\PsychoPy3>python -m pip install winpexpect
+C:\Program Files (x86)\PsychoPy3>python -m pip install <font color="red">winpexpect</font>
 ```
 
-4. Install xlrd for reading stimuli excel file.
-The setup presented a pseudo-random sequence of stimuli to the participants. The specifics of the stimuli is coded in multiple excel files. The setup requires xlrd python library to call and access to the excel files.
 
-You may need administrator privilege for installing the package. Assuming installation of PsychoPy in default route, you can install xlrd using this command:
+
+4. Install <font color="red">xlrd</font> for reading stimuli excel file.
+The setup presented a pseudo-random sequence of stimuli to the participants. The specifics of the stimuli is coded in multiple excel files. The setup requires <font color="red">xlrd</font> python library to call and access to the excel files.
+
+
+You may need administrator privilege for installing the package. Assuming installation of PsychoPy in default route, you can install <font color="red">xlrd</font> using this command:
 ```windows
-C:\Program Files (x86)\PsychoPy3>python -m pip install xlrd
+C:\Program Files (x86)\PsychoPy3>python -m pip install <font color="red">xlrd</font>
 ```
+
+
 
 ### Stream markers
 'b' : The onset of each block of stimuli
