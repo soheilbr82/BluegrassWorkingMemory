@@ -35,7 +35,7 @@ You may need administrator privilege for installing the package. Assuming instal
 C:\Program Files (x86)\PsychoPy3>python -m pip install xlrd
 ```
 
-###Stream markers
+### Stream markers
 'b' : The onset of each block of stimuli
 
 'a' or 'l' : The onset of image trials 'a' for targets and 'l' for non-targets
