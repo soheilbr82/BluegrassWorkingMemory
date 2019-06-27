@@ -592,7 +592,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="blockIdx = blockIdx + 1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -2932,6 +2932,17 @@
     <Routine name="description_practice_2"/>
     <Routine name="description_practice_3"/>
     <Routine name="Fixation10"/>
+    <LoopInitiator loopType="TrialHandler" name="Practice_Blocks">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="2" valType="code"/>
+      <Param name="name" updates="None" val="Practice_Blocks" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <Routine name="Procedure1_practice"/>
     <Routine name="waitInterTrial_practice"/>
     <LoopInitiator loopType="TrialHandler" name="Practice_trials">
@@ -2949,6 +2960,7 @@
     <Routine name="InterTrial_practice"/>
     <LoopTerminator name="Practice_trials"/>
     <Routine name="Fixation_Practice"/>
+    <LoopTerminator name="Practice_Blocks"/>
     <Routine name="end_Practice"/>
     <Routine name="initiation"/>
     <Routine name="desEyesOpen_1"/>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.1),
-    on June 27, 2019, at 14:02
+    on June 27, 2019, at 14:40
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1355,346 +1355,437 @@ for thisComponent in Fixation10Components:
         thisComponent.setAutoDraw(False)
 
 
-# ------Prepare to start Routine "Procedure1_practice"-------
-t = 0
-Procedure1_practiceClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-# update component parameters for each repeat
-index = procIdx[blockIdx]+trialIdx-1
-
-
-
-
-
-greenProc_6.setSize(greenSize)
-ProcTarget_6.setSize(pictureSize)
-ProcTarget_6.setImage(Target[index])
-ProcPicture_5.setSize(pictureSize)
-ProcPicture_5.setImage(Picture[index])
-
-# keep track of which components have finished
-Procedure1_practiceComponents = [blackProc_6, greenProc_6, ProcTarget_6, ProcPicture_5]
-for thisComponent in Procedure1_practiceComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "Procedure1_practice"-------
-while continueRoutine:
-    # get current time
-    t = Procedure1_practiceClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    
-    # *blackProc_6* updates
-    if t >= 0.0 and blackProc_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackProc_6.tStart = t
-        blackProc_6.frameNStart = frameN  # exact frame index
-        blackProc_6.setAutoDraw(True)
-    frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackProc_6.status == STARTED and t >= frameRemains:
-        blackProc_6.setAutoDraw(False)
-    
-    # *greenProc_6* updates
-    if t >= 0.0 and greenProc_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        greenProc_6.tStart = t
-        greenProc_6.frameNStart = frameN  # exact frame index
-        greenProc_6.setAutoDraw(True)
-    frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if greenProc_6.status == STARTED and t >= frameRemains:
-        greenProc_6.setAutoDraw(False)
-    
-    # *ProcTarget_6* updates
-    if t >= 0.0 and ProcTarget_6.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcTarget_6.tStart = t
-        ProcTarget_6.frameNStart = frameN  # exact frame index
-        ProcTarget_6.setAutoDraw(True)
-    frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcTarget_6.status == STARTED and t >= frameRemains:
-        ProcTarget_6.setAutoDraw(False)
-    
-    # *ProcPicture_5* updates
-    if t >= 0.0 and ProcPicture_5.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        ProcPicture_5.tStart = t
-        ProcPicture_5.frameNStart = frameN  # exact frame index
-        ProcPicture_5.setAutoDraw(True)
-    frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if ProcPicture_5.status == STARTED and t >= frameRemains:
-        ProcPicture_5.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Procedure1_practiceComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Procedure1_practice"-------
-for thisComponent in Procedure1_practiceComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-
-# the Routine "Procedure1_practice" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
-# ------Prepare to start Routine "waitInterTrial_practice"-------
-t = 0
-waitInterTrial_practiceClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-# update component parameters for each repeat
-
-whiteWaitInterTrial_7.setSize(pictureSize)
-# keep track of which components have finished
-waitInterTrial_practiceComponents = [blackWaitInterTrial_7, whiteWaitInterTrial_7]
-for thisComponent in waitInterTrial_practiceComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "waitInterTrial_practice"-------
-while continueRoutine:
-    # get current time
-    t = waitInterTrial_practiceClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    
-    # *blackWaitInterTrial_7* updates
-    if t >= 0.0 and blackWaitInterTrial_7.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        blackWaitInterTrial_7.tStart = t
-        blackWaitInterTrial_7.frameNStart = frameN  # exact frame index
-        blackWaitInterTrial_7.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if blackWaitInterTrial_7.status == STARTED and t >= frameRemains:
-        blackWaitInterTrial_7.setAutoDraw(False)
-    
-    # *whiteWaitInterTrial_7* updates
-    if t >= 0.0 and whiteWaitInterTrial_7.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        whiteWaitInterTrial_7.tStart = t
-        whiteWaitInterTrial_7.frameNStart = frameN  # exact frame index
-        whiteWaitInterTrial_7.setAutoDraw(True)
-    frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if whiteWaitInterTrial_7.status == STARTED and t >= frameRemains:
-        whiteWaitInterTrial_7.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in waitInterTrial_practiceComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "waitInterTrial_practice"-------
-for thisComponent in waitInterTrial_practiceComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-
-# the Routine "waitInterTrial_practice" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
-
 # set up handler to look after randomisation of conditions etc
-Practice_trials = data.TrialHandler(nReps=5, method='sequential', 
+Practice_Blocks = data.TrialHandler(nReps=2, method='sequential', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
-    seed=None, name='Practice_trials')
-thisExp.addLoop(Practice_trials)  # add the loop to the experiment
-thisPractice_trial = Practice_trials.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisPractice_trial.rgb)
-if thisPractice_trial != None:
-    for paramName in thisPractice_trial:
-        exec('{} = thisPractice_trial[paramName]'.format(paramName))
+    seed=None, name='Practice_Blocks')
+thisExp.addLoop(Practice_Blocks)  # add the loop to the experiment
+thisPractice_Block = Practice_Blocks.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisPractice_Block.rgb)
+if thisPractice_Block != None:
+    for paramName in thisPractice_Block:
+        exec('{} = thisPractice_Block[paramName]'.format(paramName))
 
-for thisPractice_trial in Practice_trials:
-    currentLoop = Practice_trials
+for thisPractice_Block in Practice_Blocks:
+    currentLoop = Practice_Blocks
+    # abbreviate parameter names if possible (e.g. rgb = thisPractice_Block.rgb)
+    if thisPractice_Block != None:
+        for paramName in thisPractice_Block:
+            exec('{} = thisPractice_Block[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "Procedure1_practice"-------
+    t = 0
+    Procedure1_practiceClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    index = procIdx[blockIdx]+trialIdx-1
+    
+    
+    
+    
+    
+    greenProc_6.setSize(greenSize)
+    ProcTarget_6.setSize(pictureSize)
+    ProcTarget_6.setImage(Target[index])
+    ProcPicture_5.setSize(pictureSize)
+    ProcPicture_5.setImage(Picture[index])
+    
+    # keep track of which components have finished
+    Procedure1_practiceComponents = [blackProc_6, greenProc_6, ProcTarget_6, ProcPicture_5]
+    for thisComponent in Procedure1_practiceComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "Procedure1_practice"-------
+    while continueRoutine:
+        # get current time
+        t = Procedure1_practiceClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        
+        # *blackProc_6* updates
+        if t >= 0.0 and blackProc_6.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            blackProc_6.tStart = t
+            blackProc_6.frameNStart = frameN  # exact frame index
+            blackProc_6.setAutoDraw(True)
+        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if blackProc_6.status == STARTED and t >= frameRemains:
+            blackProc_6.setAutoDraw(False)
+        
+        # *greenProc_6* updates
+        if t >= 0.0 and greenProc_6.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            greenProc_6.tStart = t
+            greenProc_6.frameNStart = frameN  # exact frame index
+            greenProc_6.setAutoDraw(True)
+        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if greenProc_6.status == STARTED and t >= frameRemains:
+            greenProc_6.setAutoDraw(False)
+        
+        # *ProcTarget_6* updates
+        if t >= 0.0 and ProcTarget_6.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            ProcTarget_6.tStart = t
+            ProcTarget_6.frameNStart = frameN  # exact frame index
+            ProcTarget_6.setAutoDraw(True)
+        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if ProcTarget_6.status == STARTED and t >= frameRemains:
+            ProcTarget_6.setAutoDraw(False)
+        
+        # *ProcPicture_5* updates
+        if t >= 0.0 and ProcPicture_5.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            ProcPicture_5.tStart = t
+            ProcPicture_5.frameNStart = frameN  # exact frame index
+            ProcPicture_5.setAutoDraw(True)
+        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if ProcPicture_5.status == STARTED and t >= frameRemains:
+            ProcPicture_5.setAutoDraw(False)
+        
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in Procedure1_practiceComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "Procedure1_practice"-------
+    for thisComponent in Procedure1_practiceComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    
+    
+    # the Routine "Procedure1_practice" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "waitInterTrial_practice"-------
+    t = 0
+    waitInterTrial_practiceClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    
+    whiteWaitInterTrial_7.setSize(pictureSize)
+    # keep track of which components have finished
+    waitInterTrial_practiceComponents = [blackWaitInterTrial_7, whiteWaitInterTrial_7]
+    for thisComponent in waitInterTrial_practiceComponents:
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "waitInterTrial_practice"-------
+    while continueRoutine:
+        # get current time
+        t = waitInterTrial_practiceClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        
+        # *blackWaitInterTrial_7* updates
+        if t >= 0.0 and blackWaitInterTrial_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            blackWaitInterTrial_7.tStart = t
+            blackWaitInterTrial_7.frameNStart = frameN  # exact frame index
+            blackWaitInterTrial_7.setAutoDraw(True)
+        frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if blackWaitInterTrial_7.status == STARTED and t >= frameRemains:
+            blackWaitInterTrial_7.setAutoDraw(False)
+        
+        # *whiteWaitInterTrial_7* updates
+        if t >= 0.0 and whiteWaitInterTrial_7.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            whiteWaitInterTrial_7.tStart = t
+            whiteWaitInterTrial_7.frameNStart = frameN  # exact frame index
+            whiteWaitInterTrial_7.setAutoDraw(True)
+        frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if whiteWaitInterTrial_7.status == STARTED and t >= frameRemains:
+            whiteWaitInterTrial_7.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in waitInterTrial_practiceComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "waitInterTrial_practice"-------
+    for thisComponent in waitInterTrial_practiceComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    
+    # the Routine "waitInterTrial_practice" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # set up handler to look after randomisation of conditions etc
+    Practice_trials = data.TrialHandler(nReps=5, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='Practice_trials')
+    thisExp.addLoop(Practice_trials)  # add the loop to the experiment
+    thisPractice_trial = Practice_trials.trialList[0]  # so we can initialise stimuli with some values
     # abbreviate parameter names if possible (e.g. rgb = thisPractice_trial.rgb)
     if thisPractice_trial != None:
         for paramName in thisPractice_trial:
             exec('{} = thisPractice_trial[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "TrialList_practice"-------
-    t = 0
-    TrialList_practiceClock.reset()  # clock
-    frameN = -1
-    continueRoutine = True
-    # update component parameters for each repeat
-    index = index + 1
-    
-    TrialPicture_3.setSize(pictureSize)
-    TrialPicture_3.setImage(Picture[index])
-    keyPressTrial_3 = event.BuilderKeyResponse()
-    
-    # keep track of which components have finished
-    TrialList_practiceComponents = [blackTrial_3, whiteTrial_3, TrialPicture_3, keyPressTrial_3]
-    for thisComponent in TrialList_practiceComponents:
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    
-    # -------Start Routine "TrialList_practice"-------
-    while continueRoutine:
-        # get current time
-        t = TrialList_practiceClock.getTime()
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+    for thisPractice_trial in Practice_trials:
+        currentLoop = Practice_trials
+        # abbreviate parameter names if possible (e.g. rgb = thisPractice_trial.rgb)
+        if thisPractice_trial != None:
+            for paramName in thisPractice_trial:
+                exec('{} = thisPractice_trial[paramName]'.format(paramName))
         
+        # ------Prepare to start Routine "TrialList_practice"-------
+        t = 0
+        TrialList_practiceClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        index = index + 1
         
-        # *blackTrial_3* updates
-        if t >= 0.0 and blackTrial_3.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            blackTrial_3.tStart = t
-            blackTrial_3.frameNStart = frameN  # exact frame index
-            blackTrial_3.setAutoDraw(True)
-        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if blackTrial_3.status == STARTED and t >= frameRemains:
-            blackTrial_3.setAutoDraw(False)
+        TrialPicture_3.setSize(pictureSize)
+        TrialPicture_3.setImage(Picture[index])
+        keyPressTrial_3 = event.BuilderKeyResponse()
         
-        # *whiteTrial_3* updates
-        if t >= 0.0 and whiteTrial_3.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            whiteTrial_3.tStart = t
-            whiteTrial_3.frameNStart = frameN  # exact frame index
-            whiteTrial_3.setAutoDraw(True)
-        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if whiteTrial_3.status == STARTED and t >= frameRemains:
-            whiteTrial_3.setAutoDraw(False)
-        
-        # *TrialPicture_3* updates
-        if t >= 0.0 and TrialPicture_3.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            TrialPicture_3.tStart = t
-            TrialPicture_3.frameNStart = frameN  # exact frame index
-            TrialPicture_3.setAutoDraw(True)
-        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if TrialPicture_3.status == STARTED and t >= frameRemains:
-            TrialPicture_3.setAutoDraw(False)
-        
-        # *keyPressTrial_3* updates
-        if t >= 0.0 and keyPressTrial_3.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            keyPressTrial_3.tStart = t
-            keyPressTrial_3.frameNStart = frameN  # exact frame index
-            keyPressTrial_3.status = STARTED
-            # keyboard checking is just starting
-            keyPressTrial_3.clock.reset()  # now t=0
-            event.clearEvents(eventType='keyboard')
-        frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if keyPressTrial_3.status == STARTED and t >= frameRemains:
-            keyPressTrial_3.status = FINISHED
-        if keyPressTrial_3.status == STARTED:
-            theseKeys = event.getKeys()
-            
-            # check for quit:
-            if "escape" in theseKeys:
-                endExpNow = True
-            if len(theseKeys) > 0:  # at least one key was pressed
-                if keyPressTrial_3.keys == []:  # then this was the first keypress
-                    keyPressTrial_3.keys = theseKeys[0]  # just the first key pressed
-                    keyPressTrial_3.rt = keyPressTrial_3.clock.getTime()
-        
-        
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        # keep track of which components have finished
+        TrialList_practiceComponents = [blackTrial_3, whiteTrial_3, TrialPicture_3, keyPressTrial_3]
         for thisComponent in TrialList_practiceComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # -------Start Routine "TrialList_practice"-------
+        while continueRoutine:
+            # get current time
+            t = TrialList_practiceClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            
+            # *blackTrial_3* updates
+            if t >= 0.0 and blackTrial_3.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                blackTrial_3.tStart = t
+                blackTrial_3.frameNStart = frameN  # exact frame index
+                blackTrial_3.setAutoDraw(True)
+            frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if blackTrial_3.status == STARTED and t >= frameRemains:
+                blackTrial_3.setAutoDraw(False)
+            
+            # *whiteTrial_3* updates
+            if t >= 0.0 and whiteTrial_3.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                whiteTrial_3.tStart = t
+                whiteTrial_3.frameNStart = frameN  # exact frame index
+                whiteTrial_3.setAutoDraw(True)
+            frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if whiteTrial_3.status == STARTED and t >= frameRemains:
+                whiteTrial_3.setAutoDraw(False)
+            
+            # *TrialPicture_3* updates
+            if t >= 0.0 and TrialPicture_3.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                TrialPicture_3.tStart = t
+                TrialPicture_3.frameNStart = frameN  # exact frame index
+                TrialPicture_3.setAutoDraw(True)
+            frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if TrialPicture_3.status == STARTED and t >= frameRemains:
+                TrialPicture_3.setAutoDraw(False)
+            
+            # *keyPressTrial_3* updates
+            if t >= 0.0 and keyPressTrial_3.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                keyPressTrial_3.tStart = t
+                keyPressTrial_3.frameNStart = frameN  # exact frame index
+                keyPressTrial_3.status = STARTED
+                # keyboard checking is just starting
+                keyPressTrial_3.clock.reset()  # now t=0
+                event.clearEvents(eventType='keyboard')
+            frameRemains = 0.0 + TrialDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if keyPressTrial_3.status == STARTED and t >= frameRemains:
+                keyPressTrial_3.status = FINISHED
+            if keyPressTrial_3.status == STARTED:
+                theseKeys = event.getKeys()
+                
+                # check for quit:
+                if "escape" in theseKeys:
+                    endExpNow = True
+                if len(theseKeys) > 0:  # at least one key was pressed
+                    if keyPressTrial_3.keys == []:  # then this was the first keypress
+                        keyPressTrial_3.keys = theseKeys[0]  # just the first key pressed
+                        keyPressTrial_3.rt = keyPressTrial_3.clock.getTime()
+            
+            
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in TrialList_practiceComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "TrialList_practice"-------
+        for thisComponent in TrialList_practiceComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        # check responses
+        if keyPressTrial_3.keys in ['', [], None]:  # No response was made
+            keyPressTrial_3.keys=None
+        Practice_trials.addData('keyPressTrial_3.keys',keyPressTrial_3.keys)
+        if keyPressTrial_3.keys != None:  # we had a response
+            Practice_trials.addData('keyPressTrial_3.rt', keyPressTrial_3.rt)
+        
+        # the Routine "TrialList_practice" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # ------Prepare to start Routine "InterTrial_practice"-------
+        t = 0
+        InterTrial_practiceClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        whiteWaitInterTrial_8.setSize(pictureSize)
+        
+        
+        
+        # keep track of which components have finished
+        InterTrial_practiceComponents = [blackWaitInterTrial_8, whiteWaitInterTrial_8]
+        for thisComponent in InterTrial_practiceComponents:
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "InterTrial_practice"-------
+        while continueRoutine:
+            # get current time
+            t = InterTrial_practiceClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *blackWaitInterTrial_8* updates
+            if t >= 0.0 and blackWaitInterTrial_8.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                blackWaitInterTrial_8.tStart = t
+                blackWaitInterTrial_8.frameNStart = frameN  # exact frame index
+                blackWaitInterTrial_8.setAutoDraw(True)
+            frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if blackWaitInterTrial_8.status == STARTED and t >= frameRemains:
+                blackWaitInterTrial_8.setAutoDraw(False)
+            
+            # *whiteWaitInterTrial_8* updates
+            if t >= 0.0 and whiteWaitInterTrial_8.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                whiteWaitInterTrial_8.tStart = t
+                whiteWaitInterTrial_8.frameNStart = frameN  # exact frame index
+                whiteWaitInterTrial_8.setAutoDraw(True)
+            frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
+            if whiteWaitInterTrial_8.status == STARTED and t >= frameRemains:
+                whiteWaitInterTrial_8.setAutoDraw(False)
+            
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or event.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in InterTrial_practiceComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "InterTrial_practice"-------
+        for thisComponent in InterTrial_practiceComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        
+        # the Routine "InterTrial_practice" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 5 repeats of 'Practice_trials'
     
-    # -------Ending Routine "TrialList_practice"-------
-    for thisComponent in TrialList_practiceComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
     
-    # check responses
-    if keyPressTrial_3.keys in ['', [], None]:  # No response was made
-        keyPressTrial_3.keys=None
-    Practice_trials.addData('keyPressTrial_3.keys',keyPressTrial_3.keys)
-    if keyPressTrial_3.keys != None:  # we had a response
-        Practice_trials.addData('keyPressTrial_3.rt', keyPressTrial_3.rt)
-    
-    # the Routine "TrialList_practice" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "InterTrial_practice"-------
+    # ------Prepare to start Routine "Fixation_Practice"-------
     t = 0
-    InterTrial_practiceClock.reset()  # clock
+    Fixation_PracticeClock.reset()  # clock
     frameN = -1
     continueRoutine = True
+    routineTimer.add(2.000000)
     # update component parameters for each repeat
-    whiteWaitInterTrial_8.setSize(pictureSize)
-    
-    
-    
+    fixationImage_3.setSize(pictureSize)
+    blockIdx = blockIdx + 1
     # keep track of which components have finished
-    InterTrial_practiceComponents = [blackWaitInterTrial_8, whiteWaitInterTrial_8]
-    for thisComponent in InterTrial_practiceComponents:
+    Fixation_PracticeComponents = [fixation_3, fixationImage_3]
+    for thisComponent in Fixation_PracticeComponents:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
     
-    # -------Start Routine "InterTrial_practice"-------
-    while continueRoutine:
+    # -------Start Routine "Fixation_Practice"-------
+    while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = InterTrial_practiceClock.getTime()
+        t = Fixation_PracticeClock.getTime()
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *blackWaitInterTrial_8* updates
-        if t >= 0.0 and blackWaitInterTrial_8.status == NOT_STARTED:
+        # *fixation_3* updates
+        if t >= 0.0 and fixation_3.status == NOT_STARTED:
             # keep track of start time/frame for later
-            blackWaitInterTrial_8.tStart = t
-            blackWaitInterTrial_8.frameNStart = frameN  # exact frame index
-            blackWaitInterTrial_8.setAutoDraw(True)
-        frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if blackWaitInterTrial_8.status == STARTED and t >= frameRemains:
-            blackWaitInterTrial_8.setAutoDraw(False)
+            fixation_3.tStart = t
+            fixation_3.frameNStart = frameN  # exact frame index
+            fixation_3.setAutoDraw(True)
+        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if fixation_3.status == STARTED and t >= frameRemains:
+            fixation_3.setAutoDraw(False)
         
-        # *whiteWaitInterTrial_8* updates
-        if t >= 0.0 and whiteWaitInterTrial_8.status == NOT_STARTED:
+        # *fixationImage_3* updates
+        if t >= 0.0 and fixationImage_3.status == NOT_STARTED:
             # keep track of start time/frame for later
-            whiteWaitInterTrial_8.tStart = t
-            whiteWaitInterTrial_8.frameNStart = frameN  # exact frame index
-            whiteWaitInterTrial_8.setAutoDraw(True)
-        frameRemains = 0.0 + ITDuration[index]- win.monitorFramePeriod * 0.75  # most of one frame period left
-        if whiteWaitInterTrial_8.status == STARTED and t >= frameRemains:
-            whiteWaitInterTrial_8.setAutoDraw(False)
+            fixationImage_3.tStart = t
+            fixationImage_3.frameNStart = frameN  # exact frame index
+            fixationImage_3.setAutoDraw(True)
+        frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if fixationImage_3.status == STARTED and t >= frameRemains:
+            fixationImage_3.setAutoDraw(False)
         
         
         # check for quit (typically the Esc key)
@@ -1705,7 +1796,7 @@ for thisPractice_trial in Practice_trials:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in InterTrial_practiceComponents:
+        for thisComponent in Fixation_PracticeComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1714,82 +1805,14 @@ for thisPractice_trial in Practice_trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "InterTrial_practice"-------
-    for thisComponent in InterTrial_practiceComponents:
+    # -------Ending Routine "Fixation_Practice"-------
+    for thisComponent in Fixation_PracticeComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     
-    # the Routine "InterTrial_practice" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 5 repeats of 'Practice_trials'
-
-
-# ------Prepare to start Routine "Fixation_Practice"-------
-t = 0
-Fixation_PracticeClock.reset()  # clock
-frameN = -1
-continueRoutine = True
-routineTimer.add(2.000000)
-# update component parameters for each repeat
-fixationImage_3.setSize(pictureSize)
-
-# keep track of which components have finished
-Fixation_PracticeComponents = [fixation_3, fixationImage_3]
-for thisComponent in Fixation_PracticeComponents:
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-
-# -------Start Routine "Fixation_Practice"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = Fixation_PracticeClock.getTime()
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *fixation_3* updates
-    if t >= 0.0 and fixation_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixation_3.tStart = t
-        fixation_3.frameNStart = frameN  # exact frame index
-        fixation_3.setAutoDraw(True)
-    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixation_3.status == STARTED and t >= frameRemains:
-        fixation_3.setAutoDraw(False)
-    
-    # *fixationImage_3* updates
-    if t >= 0.0 and fixationImage_3.status == NOT_STARTED:
-        # keep track of start time/frame for later
-        fixationImage_3.tStart = t
-        fixationImage_3.frameNStart = frameN  # exact frame index
-        fixationImage_3.setAutoDraw(True)
-    frameRemains = 0.0 + 2.0- win.monitorFramePeriod * 0.75  # most of one frame period left
-    if fixationImage_3.status == STARTED and t >= frameRemains:
-        fixationImage_3.setAutoDraw(False)
-    
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in Fixation_PracticeComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "Fixation_Practice"-------
-for thisComponent in Fixation_PracticeComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
+# completed 2 repeats of 'Practice_Blocks'
 
 
 # ------Prepare to start Routine "end_Practice"-------
