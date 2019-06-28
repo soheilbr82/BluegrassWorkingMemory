@@ -87,5 +87,5 @@ LabRecorder record into the XDF file format (Extensible Data Format, hosted at h
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-# Copyright and license
+## Copyright and license
 The codes are released under [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
