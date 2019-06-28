@@ -13,7 +13,7 @@ Jiang's ABC lab, University of Kentucky, Lexington
 
 Bluegrass Short-term Memory paradigm was originally designed by Dr. Yang Jiang.
 
-### Installation
+## Installation
 The setup is generally OS-independent. However, the below instruction is for Windows 10.
 
 
@@ -54,7 +54,7 @@ C:\Program Files (x86)\PsychoPy3>python -m pip install xlrd
 
 
 
-### Stream markers
+## Stream markers
 'b' : The onset of each block of stimuli
 
 'a' or 'l' : The onset of image trials 'a' for targets and 'l' for non-targets
@@ -81,11 +81,11 @@ Resting state EEG Markers:
 'e': The end of the experiment
 
 
-### Recording File Format
+## Recording File Format
 LabRecorder record into the XDF file format (Extensible Data Format, hosted at https://github.com/sccn/xdf). XDF was designed concurrently with the lab streaming layer and supports the full feature set of LSL (including multi-stream container files, per-stream arbitrarily large XML headers, all sample formats as well as time-synchronization information).
 
-### Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### License
-[MIT](https://choosealicense.com/licenses/mit/)
+# Copyright and license
+The codes are released under [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
