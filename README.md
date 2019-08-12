@@ -93,7 +93,7 @@ If you find this platform and the associated code useful for your research, plea
 
 ```
 @article{borhani2019connectivity,
-	author = {Soheil Borhani and Reza Abiri and Yang Jiang and Taylor Berger and Xiaopeng Zhao},
+	author = {Borhani, Soheil and Abiri, Reza and Jiang, Yang and Berger, Taylor and Zhao, Xiaopeng},
 	title = {Brain connectivity evaluation during selective attention using EEG-based brain-computer interface},
 	journal = {Brain-Computer Interfaces},
 	volume = {0},
