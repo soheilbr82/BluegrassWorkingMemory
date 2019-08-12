@@ -87,5 +87,22 @@ LabRecorder record into the XDF file format (Extensible Data Format, hosted at h
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Copyright and license
-The codes are released under [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+
+## Reference
+If you find this platform and the associated code useful for your research, please cite:
+
+```
+@article{borhani2019connectivity,
+	author = {Soheil Borhani and Reza Abiri and Yang Jiang and Taylor Berger and Xiaopeng Zhao},
+	title = {Brain connectivity evaluation during selective attention using EEG-based brain-computer interface},
+	journal = {Brain-Computer Interfaces},
+	volume = {0},
+	number = {0},
+	pages = {1-11},
+	year  = {2019},
+	publisher = {Taylor & Francis},
+	doi = {10.1080/2326263X.2019.1651186},
+	URL = {https://doi.org/10.1080/2326263X.2019.1651186},
+	eprint = {https://doi.org/10.1080/2326263X.2019.1651186}
+}
+```
