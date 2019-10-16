@@ -1,0 +1,361 @@
+13.5906 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000242215CDF28>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000242213931D0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1200]), stereo=False, units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.5907 	EXP 	window1: recordFrameIntervals = False
+13.7563 	EXP 	window1: recordFrameIntervals = True
+13.9399 	EXP 	window1: recordFrameIntervals = False
+14.1724 	EXP 	Created polygon_5 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_5', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.3424 	EXP 	Created descriptionText_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, languageStyle='LTR', name='descriptionText_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+14.3431 	EXP 	Created polygon_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_3', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.3588 	EXP 	Created descriptionText_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, languageStyle='LTR', name='descriptionText_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+14.3594 	EXP 	Created polygon_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.3765 	EXP 	Created descriptionText_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, languageStyle='LTR', name='descriptionText_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+14.3771 	EXP 	Created polygon_12 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_12', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4084 	EXP 	Created descriptionText_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, languageStyle='LTR', name='descriptionText_12', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+14.4090 	EXP 	Created fixation10 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='fixation10', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4392 	EXP 	Created fixationImage10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/fix.bmp', interpolate=True, mask=None, maskParams=None, name='fixationImage10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.4640 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='3 . . .', units='norm', win=Window(...), wrapWidth=1)
+14.4782 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='2 . .', units='norm', win=Window(...), wrapWidth=1)
+14.4824 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='1 .', units='norm', win=Window(...), wrapWidth=1)
+14.4830 	EXP 	Created blackProc = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackProc', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4835 	EXP 	Created greenProc = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor='green', fillColorSpace='named', fillRGB=array([  0., 128.,   0.]), interpolate=True, lineColor='green', lineColorSpace='named', lineRGB=array([  0., 128.,   0.]), lineWidth=1, name='greenProc', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4853 	EXP 	Created ProcTarget = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ProcTarget', opacity=1.0, ori=0.0, pos=array([-0.4,  0. ]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.4871 	EXP 	Created ProcPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ProcPicture', opacity=1.0, ori=0.0, pos=array([0.4, 0. ]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.4876 	EXP 	Created blackWaitInterTrial = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackWaitInterTrial', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4932 	EXP 	Created whiteWaitInterTrial = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='./stimuli/images/blank.bmp', interpolate=True, mask=None, maskParams=None, name='whiteWaitInterTrial', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.4937 	EXP 	Created blackTrial = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackTrial', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4942 	EXP 	Created whiteTrial = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor='white', fillColorSpace='named', fillRGB=array([255., 255., 255.]), interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([255., 255., 255.]), lineWidth=1, name='whiteTrial', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.4958 	EXP 	Created TrialPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='TrialPicture', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.4964 	EXP 	Created blackWaitInterTrial_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackWaitInterTrial_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.5026 	EXP 	Created whiteWaitInterTrial_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/blank.bmp', interpolate=True, mask=None, maskParams=None, name='whiteWaitInterTrial_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.5031 	EXP 	Created fixation = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='fixation', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.5087 	EXP 	Created fixationImage = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/fix.bmp', interpolate=True, mask=None, maskParams=None, name='fixationImage', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.5092 	EXP 	Created polygon_end = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_end', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.5317 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='end_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='That completes Round 1 of the task', units='norm', win=Window(...), wrapWidth=1)
+14.5325 	EXP 	Created polygon_15 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_15', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6208 	EXP 	Created descriptionText_15 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, languageStyle='LTR', name='descriptionText_15', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='norm', win=Window(...), wrapWidth=1)
+14.6214 	EXP 	Created fixation10 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='fixation10', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6278 	EXP 	Created fixationImage10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/fix.bmp', interpolate=True, mask=None, maskParams=None, name='fixationImage10', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6301 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='3 . . .', units='norm', win=Window(...), wrapWidth=1)
+14.6324 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='2 . .', units='norm', win=Window(...), wrapWidth=1)
+14.6346 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.3, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([255., 255., 255.]), text='1 .', units='norm', win=Window(...), wrapWidth=1)
+14.6351 	EXP 	Created blackProc_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackProc_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6356 	EXP 	Created greenProc_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor='green', fillColorSpace='named', fillRGB=array([  0., 128.,   0.]), interpolate=True, lineColor='green', lineColorSpace='named', lineRGB=array([  0., 128.,   0.]), lineWidth=1, name='greenProc_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6374 	EXP 	Created ProcTarget_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ProcTarget_2', opacity=1.0, ori=0.0, pos=array([-0.4,  0. ]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6390 	EXP 	Created ProcPicture_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ProcPicture_2', opacity=1.0, ori=0.0, pos=array([0.4, 0. ]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6395 	EXP 	Created blackWaitInterTrial_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackWaitInterTrial_3', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6449 	EXP 	Created whiteWaitInterTrial_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='./stimuli/images/blank.bmp', interpolate=True, mask=None, maskParams=None, name='whiteWaitInterTrial_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6454 	EXP 	Created blackTrial_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackTrial_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6460 	EXP 	Created whiteTrial_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-2.0, fillColor='white', fillColorSpace='named', fillRGB=array([255., 255., 255.]), interpolate=True, lineColor='white', lineColorSpace='named', lineRGB=array([255., 255., 255.]), lineWidth=1, name='whiteTrial_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6476 	EXP 	Created TrialPicture_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='TrialPicture_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6482 	EXP 	Created blackWaitInterTrial_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='blackWaitInterTrial_4', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6544 	EXP 	Created whiteWaitInterTrial_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/blank.bmp', interpolate=True, mask=None, maskParams=None, name='whiteWaitInterTrial_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6549 	EXP 	Created fixation_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='fixation_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6603 	EXP 	Created fixationImage_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='./stimuli/images/fix.bmp', interpolate=True, mask=None, maskParams=None, name='fixationImage_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='norm', win=Window(...))
+14.6608 	EXP 	Created polygon_end_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor='black', fillColorSpace='named', fillRGB=array([0., 0., 0.]), interpolate=True, lineColor='black', lineColorSpace='named', lineRGB=array([0., 0., 0.]), lineWidth=1, name='polygon_end_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='norm', vertices=ndarray(...), win=Window(...))
+14.6724 	EXP 	Created end_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='end_text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Thank you for your participation!', units='norm', win=Window(...), wrapWidth=1)
+14.7646 	EXP 	polygon_5: autoDraw = True
+14.7646 	EXP 	descriptionText_5: autoDraw = True
+15.9540 	DATA 	Keypress: space
+15.9621 	EXP 	polygon_5: autoDraw = False
+15.9621 	EXP 	descriptionText_5: autoDraw = False
+15.9621 	EXP 	polygon_3: autoDraw = True
+15.9621 	EXP 	descriptionText_3: autoDraw = True
+16.8731 	DATA 	Keypress: space
+16.8770 	EXP 	polygon_3: autoDraw = False
+16.8770 	EXP 	descriptionText_3: autoDraw = False
+16.8770 	EXP 	polygon_9: autoDraw = True
+16.8770 	EXP 	descriptionText_9: autoDraw = True
+17.6727 	DATA 	Keypress: space
+17.6763 	EXP 	polygon_9: autoDraw = False
+17.6763 	EXP 	descriptionText_9: autoDraw = False
+17.6763 	EXP 	polygon_12: autoDraw = True
+17.6763 	EXP 	descriptionText_12: autoDraw = True
+18.3687 	DATA 	Keypress: space
+18.3742 	EXP 	polygon_12: autoDraw = False
+18.3742 	EXP 	descriptionText_12: autoDraw = False
+18.3742 	EXP 	fixationImage10: size = array([0.75, 1.  ])
+18.3742 	EXP 	fixation10: autoDraw = True
+18.3742 	EXP 	fixationImage10: autoDraw = True
+25.3673 	EXP 	text: autoDraw = True
+26.3686 	EXP 	text: autoDraw = False
+26.3686 	EXP 	text_2: autoDraw = True
+27.3698 	EXP 	text_2: autoDraw = False
+27.3698 	EXP 	text_3: autoDraw = True
+28.3697 	EXP 	text_3: autoDraw = False
+28.3701 	EXP 	Created sequence: sequential, trialTypes=1, nReps=8, seed=None
+28.3703 	EXP 	New trial (rep=0, index=0): None
+28.4013 	EXP 	fixation10: autoDraw = False
+28.4013 	EXP 	fixationImage10: autoDraw = False
+28.4013 	EXP 	text: autoDraw = False
+28.4013 	EXP 	text_2: autoDraw = False
+28.4013 	EXP 	text_3: autoDraw = False
+28.4013 	EXP 	greenProc: size = array([1.6, 1.2])
+28.4013 	EXP 	ProcTarget: size = array([0.75, 1.  ])
+28.4013 	EXP 	ProcTarget: image = './stimuli/images/070.bmp'
+28.4013 	EXP 	ProcPicture: size = array([0.75, 1.  ])
+28.4013 	EXP 	ProcPicture: image = './stimuli/images/208.bmp'
+28.4013 	EXP 	blackProc: autoDraw = True
+28.4013 	EXP 	greenProc: autoDraw = True
+28.4013 	EXP 	ProcTarget: autoDraw = True
+28.4013 	EXP 	ProcPicture: autoDraw = True
+31.9023 	EXP 	blackProc: autoDraw = False
+31.9023 	EXP 	greenProc: autoDraw = False
+31.9023 	EXP 	ProcTarget: autoDraw = False
+31.9023 	EXP 	ProcPicture: autoDraw = False
+31.9023 	EXP 	blackProc: autoDraw = False
+31.9023 	EXP 	greenProc: autoDraw = False
+31.9023 	EXP 	ProcTarget: autoDraw = False
+31.9023 	EXP 	ProcPicture: autoDraw = False
+31.9023 	EXP 	whiteWaitInterTrial: size = array([0.75, 1.  ])
+31.9023 	EXP 	blackWaitInterTrial: autoDraw = True
+31.9023 	EXP 	whiteWaitInterTrial: autoDraw = True
+32.3101 	DATA 	Keypress: a
+33.3935 	EXP 	Created sequence: sequential, trialTypes=1, nReps=12, seed=None
+33.3939 	EXP 	New trial (rep=0, index=0): None
+33.4122 	EXP 	blackWaitInterTrial: autoDraw = False
+33.4122 	EXP 	whiteWaitInterTrial: autoDraw = False
+33.4122 	EXP 	blackWaitInterTrial: autoDraw = False
+33.4122 	EXP 	whiteWaitInterTrial: autoDraw = False
+33.4122 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+33.4122 	EXP 	TrialPicture: image = './stimuli/images/015.bmp'
+33.4122 	EXP 	blackTrial: autoDraw = True
+33.4122 	EXP 	whiteTrial: autoDraw = True
+33.4122 	EXP 	TrialPicture: autoDraw = True
+33.8468 	DATA 	Keypress: a
+34.4213 	EXP 	blackTrial: autoDraw = False
+34.4213 	EXP 	whiteTrial: autoDraw = False
+34.4213 	EXP 	TrialPicture: autoDraw = False
+34.4213 	EXP 	blackTrial: autoDraw = False
+34.4213 	EXP 	whiteTrial: autoDraw = False
+34.4213 	EXP 	TrialPicture: autoDraw = False
+34.4213 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+34.4213 	EXP 	blackWaitInterTrial_2: autoDraw = True
+34.4213 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+36.2129 	EXP 	New trial (rep=1, index=0): None
+36.2259 	EXP 	blackWaitInterTrial_2: autoDraw = False
+36.2259 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+36.2259 	EXP 	blackWaitInterTrial_2: autoDraw = False
+36.2259 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+36.2259 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+36.2259 	EXP 	TrialPicture: image = './stimuli/images/208.bmp'
+36.2259 	EXP 	blackTrial: autoDraw = True
+36.2259 	EXP 	whiteTrial: autoDraw = True
+36.2259 	EXP 	TrialPicture: autoDraw = True
+36.5159 	DATA 	Keypress: a
+37.2278 	EXP 	blackTrial: autoDraw = False
+37.2278 	EXP 	whiteTrial: autoDraw = False
+37.2278 	EXP 	TrialPicture: autoDraw = False
+37.2278 	EXP 	blackTrial: autoDraw = False
+37.2278 	EXP 	whiteTrial: autoDraw = False
+37.2278 	EXP 	TrialPicture: autoDraw = False
+37.2278 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+37.2278 	EXP 	blackWaitInterTrial_2: autoDraw = True
+37.2278 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+38.9278 	EXP 	New trial (rep=2, index=0): None
+38.9726 	EXP 	blackWaitInterTrial_2: autoDraw = False
+38.9726 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+38.9726 	EXP 	blackWaitInterTrial_2: autoDraw = False
+38.9726 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+38.9726 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+38.9726 	EXP 	TrialPicture: image = './stimuli/images/070.bmp'
+38.9726 	EXP 	blackTrial: autoDraw = True
+38.9726 	EXP 	whiteTrial: autoDraw = True
+38.9726 	EXP 	TrialPicture: autoDraw = True
+39.2687 	DATA 	Keypress: a
+39.9808 	EXP 	blackTrial: autoDraw = False
+39.9808 	EXP 	whiteTrial: autoDraw = False
+39.9808 	EXP 	TrialPicture: autoDraw = False
+39.9808 	EXP 	blackTrial: autoDraw = False
+39.9808 	EXP 	whiteTrial: autoDraw = False
+39.9808 	EXP 	TrialPicture: autoDraw = False
+39.9808 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+39.9808 	EXP 	blackWaitInterTrial_2: autoDraw = True
+39.9808 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+41.6670 	EXP 	New trial (rep=3, index=0): None
+41.6793 	EXP 	blackWaitInterTrial_2: autoDraw = False
+41.6793 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+41.6793 	EXP 	blackWaitInterTrial_2: autoDraw = False
+41.6793 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+41.6793 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+41.6793 	EXP 	TrialPicture: image = './stimuli/images/015.bmp'
+41.6793 	EXP 	blackTrial: autoDraw = True
+41.6793 	EXP 	whiteTrial: autoDraw = True
+41.6793 	EXP 	TrialPicture: autoDraw = True
+42.0862 	DATA 	Keypress: a
+42.6824 	EXP 	blackTrial: autoDraw = False
+42.6824 	EXP 	whiteTrial: autoDraw = False
+42.6824 	EXP 	TrialPicture: autoDraw = False
+42.6824 	EXP 	blackTrial: autoDraw = False
+42.6824 	EXP 	whiteTrial: autoDraw = False
+42.6824 	EXP 	TrialPicture: autoDraw = False
+42.6824 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+42.6824 	EXP 	blackWaitInterTrial_2: autoDraw = True
+42.6824 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+44.3713 	EXP 	New trial (rep=4, index=0): None
+44.3848 	EXP 	blackWaitInterTrial_2: autoDraw = False
+44.3848 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+44.3848 	EXP 	blackWaitInterTrial_2: autoDraw = False
+44.3848 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+44.3848 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+44.3848 	EXP 	TrialPicture: image = './stimuli/images/208.bmp'
+44.3848 	EXP 	blackTrial: autoDraw = True
+44.3848 	EXP 	whiteTrial: autoDraw = True
+44.3848 	EXP 	TrialPicture: autoDraw = True
+44.7902 	DATA 	Keypress: a
+45.3848 	EXP 	blackTrial: autoDraw = False
+45.3848 	EXP 	whiteTrial: autoDraw = False
+45.3848 	EXP 	TrialPicture: autoDraw = False
+45.3848 	EXP 	blackTrial: autoDraw = False
+45.3848 	EXP 	whiteTrial: autoDraw = False
+45.3848 	EXP 	TrialPicture: autoDraw = False
+45.3848 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+45.3848 	EXP 	blackWaitInterTrial_2: autoDraw = True
+45.3848 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+47.1730 	EXP 	New trial (rep=5, index=0): None
+47.1853 	EXP 	blackWaitInterTrial_2: autoDraw = False
+47.1853 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+47.1853 	EXP 	blackWaitInterTrial_2: autoDraw = False
+47.1853 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+47.1853 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+47.1853 	EXP 	TrialPicture: image = './stimuli/images/070.bmp'
+47.1853 	EXP 	blackTrial: autoDraw = True
+47.1853 	EXP 	whiteTrial: autoDraw = True
+47.1853 	EXP 	TrialPicture: autoDraw = True
+47.7774 	DATA 	Keypress: l
+48.1833 	EXP 	blackTrial: autoDraw = False
+48.1833 	EXP 	whiteTrial: autoDraw = False
+48.1833 	EXP 	TrialPicture: autoDraw = False
+48.1833 	EXP 	blackTrial: autoDraw = False
+48.1833 	EXP 	whiteTrial: autoDraw = False
+48.1833 	EXP 	TrialPicture: autoDraw = False
+48.1833 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+48.1833 	EXP 	blackWaitInterTrial_2: autoDraw = True
+48.1833 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+49.9767 	EXP 	New trial (rep=6, index=0): None
+49.9914 	EXP 	blackWaitInterTrial_2: autoDraw = False
+49.9914 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+49.9914 	EXP 	blackWaitInterTrial_2: autoDraw = False
+49.9914 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+49.9914 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+49.9914 	EXP 	TrialPicture: image = './stimuli/images/081.bmp'
+49.9914 	EXP 	blackTrial: autoDraw = True
+49.9914 	EXP 	whiteTrial: autoDraw = True
+49.9914 	EXP 	TrialPicture: autoDraw = True
+50.4280 	DATA 	Keypress: a
+51.0064 	EXP 	blackTrial: autoDraw = False
+51.0064 	EXP 	whiteTrial: autoDraw = False
+51.0064 	EXP 	TrialPicture: autoDraw = False
+51.0064 	EXP 	blackTrial: autoDraw = False
+51.0064 	EXP 	whiteTrial: autoDraw = False
+51.0064 	EXP 	TrialPicture: autoDraw = False
+51.0064 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+51.0064 	EXP 	blackWaitInterTrial_2: autoDraw = True
+51.0064 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+52.5943 	EXP 	New trial (rep=7, index=0): None
+52.6095 	EXP 	blackWaitInterTrial_2: autoDraw = False
+52.6095 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+52.6095 	EXP 	blackWaitInterTrial_2: autoDraw = False
+52.6095 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+52.6095 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+52.6095 	EXP 	TrialPicture: image = './stimuli/images/015.bmp'
+52.6095 	EXP 	blackTrial: autoDraw = True
+52.6095 	EXP 	whiteTrial: autoDraw = True
+52.6095 	EXP 	TrialPicture: autoDraw = True
+52.9796 	DATA 	Keypress: a
+53.6094 	EXP 	blackTrial: autoDraw = False
+53.6094 	EXP 	whiteTrial: autoDraw = False
+53.6094 	EXP 	TrialPicture: autoDraw = False
+53.6094 	EXP 	blackTrial: autoDraw = False
+53.6094 	EXP 	whiteTrial: autoDraw = False
+53.6094 	EXP 	TrialPicture: autoDraw = False
+53.6094 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+53.6094 	EXP 	blackWaitInterTrial_2: autoDraw = True
+53.6094 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+55.4131 	EXP 	New trial (rep=8, index=0): None
+55.4258 	EXP 	blackWaitInterTrial_2: autoDraw = False
+55.4258 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+55.4258 	EXP 	blackWaitInterTrial_2: autoDraw = False
+55.4258 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+55.4258 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+55.4258 	EXP 	TrialPicture: image = './stimuli/images/081.bmp'
+55.4258 	EXP 	blackTrial: autoDraw = True
+55.4258 	EXP 	whiteTrial: autoDraw = True
+55.4258 	EXP 	TrialPicture: autoDraw = True
+55.7815 	DATA 	Keypress: a
+56.4239 	EXP 	blackTrial: autoDraw = False
+56.4239 	EXP 	whiteTrial: autoDraw = False
+56.4239 	EXP 	TrialPicture: autoDraw = False
+56.4239 	EXP 	blackTrial: autoDraw = False
+56.4239 	EXP 	whiteTrial: autoDraw = False
+56.4239 	EXP 	TrialPicture: autoDraw = False
+56.4239 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+56.4239 	EXP 	blackWaitInterTrial_2: autoDraw = True
+56.4239 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+58.0156 	EXP 	New trial (rep=9, index=0): None
+58.0305 	EXP 	blackWaitInterTrial_2: autoDraw = False
+58.0305 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+58.0305 	EXP 	blackWaitInterTrial_2: autoDraw = False
+58.0305 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+58.0305 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+58.0305 	EXP 	TrialPicture: image = './stimuli/images/070.bmp'
+58.0305 	EXP 	blackTrial: autoDraw = True
+58.0305 	EXP 	whiteTrial: autoDraw = True
+58.0305 	EXP 	TrialPicture: autoDraw = True
+58.4690 	DATA 	Keypress: a
+59.0307 	EXP 	blackTrial: autoDraw = False
+59.0307 	EXP 	whiteTrial: autoDraw = False
+59.0307 	EXP 	TrialPicture: autoDraw = False
+59.0307 	EXP 	blackTrial: autoDraw = False
+59.0307 	EXP 	whiteTrial: autoDraw = False
+59.0307 	EXP 	TrialPicture: autoDraw = False
+59.0307 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+59.0307 	EXP 	blackWaitInterTrial_2: autoDraw = True
+59.0307 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+60.7347 	EXP 	New trial (rep=10, index=0): None
+60.7472 	EXP 	blackWaitInterTrial_2: autoDraw = False
+60.7472 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+60.7472 	EXP 	blackWaitInterTrial_2: autoDraw = False
+60.7472 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+60.7472 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+60.7472 	EXP 	TrialPicture: image = './stimuli/images/081.bmp'
+60.7472 	EXP 	blackTrial: autoDraw = True
+60.7472 	EXP 	whiteTrial: autoDraw = True
+60.7472 	EXP 	TrialPicture: autoDraw = True
+61.0371 	DATA 	Keypress: a
+61.7490 	EXP 	blackTrial: autoDraw = False
+61.7490 	EXP 	whiteTrial: autoDraw = False
+61.7490 	EXP 	TrialPicture: autoDraw = False
+61.7490 	EXP 	blackTrial: autoDraw = False
+61.7490 	EXP 	whiteTrial: autoDraw = False
+61.7490 	EXP 	TrialPicture: autoDraw = False
+61.7490 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+61.7490 	EXP 	blackWaitInterTrial_2: autoDraw = True
+61.7490 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+63.3379 	EXP 	New trial (rep=11, index=0): None
+63.3532 	EXP 	blackWaitInterTrial_2: autoDraw = False
+63.3532 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+63.3532 	EXP 	blackWaitInterTrial_2: autoDraw = False
+63.3532 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+63.3532 	EXP 	TrialPicture: size = array([0.75, 1.  ])
+63.3532 	EXP 	TrialPicture: image = './stimuli/images/081.bmp'
+63.3532 	EXP 	blackTrial: autoDraw = True
+63.3532 	EXP 	whiteTrial: autoDraw = True
+63.3532 	EXP 	TrialPicture: autoDraw = True
+63.6727 	DATA 	Keypress: a
+64.3681 	EXP 	blackTrial: autoDraw = False
+64.3681 	EXP 	whiteTrial: autoDraw = False
+64.3681 	EXP 	TrialPicture: autoDraw = False
+64.3681 	EXP 	blackTrial: autoDraw = False
+64.3681 	EXP 	whiteTrial: autoDraw = False
+64.3681 	EXP 	TrialPicture: autoDraw = False
+64.3681 	EXP 	whiteWaitInterTrial_2: size = array([0.75, 1.  ])
+64.3681 	EXP 	blackWaitInterTrial_2: autoDraw = True
+64.3681 	EXP 	whiteWaitInterTrial_2: autoDraw = True
+66.0665 	EXP 	blackWaitInterTrial_2: autoDraw = False
+66.0665 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+66.0665 	EXP 	blackWaitInterTrial_2: autoDraw = False
+66.0665 	EXP 	whiteWaitInterTrial_2: autoDraw = False
+66.0665 	EXP 	fixationImage: size = array([0.75, 1.  ])
+66.0665 	EXP 	fixation: autoDraw = True
+66.0665 	EXP 	fixationImage: autoDraw = True
+66.0904 	DATA 	Keypress: a
+67.1414 	DATA 	Keypress: escape
