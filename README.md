@@ -87,6 +87,10 @@ LabRecorder record into the XDF file format (Extensible Data Format, hosted at h
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## GNU
+### GNU GPL v3
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)    
+`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
 
 ## Reference
 If you find this platform and the associated code useful for your research, please cite:
