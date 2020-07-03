@@ -9,9 +9,12 @@ The setup is developed by:\
 Soheil Borhani, sborhani@vols.utk.edu\
 Michael O'neil, moneil8@vols.utk.edu
 
-This is achieved in collaboration with:\
-Zhao's Nonlinear Biodynamics lab, University of Tennessee, Knoxville\
-Jiang's ABC lab, University of Kentucky, Lexington
+The setup is developed under the supervision of:\
+Dr. Xiaopeng Zhao\
+Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
+
+Dr. Yang Jiang\
+Department of Behavioral Sciences, University of Kentucky, Lexington
 
 Bluegrass Short-term Memory paradigm was originally designed by Dr. Yang Jiang.
 
