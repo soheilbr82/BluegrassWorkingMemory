@@ -12,7 +12,7 @@ Undergraduate Research Assistant: Michael O'neil, moneil8 at vols.utk.edu
 
 ### Faculty Advisors:
 Dr. Xiaopeng Zhao\
-Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
+Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville
 
 Dr. Yang Jiang\
 Department of Behavioral Sciences, University of Kentucky, Lexington
