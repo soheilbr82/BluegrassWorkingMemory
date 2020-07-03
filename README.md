@@ -14,7 +14,7 @@ Dr. Xiaopeng Zhao\
 Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
 \
 Dr. Yang Jiang\
-Department of Behavioral Sciences, University of Kentucky, Lexington\
+Department of Behavioral Sciences, University of Kentucky, Lexington
 
 This platform is based on the Bluegrass Short-term Memory Protocol developed by Dr. Yang Jiang
 
