@@ -17,15 +17,6 @@ Department of Mechanical, Aerospace, and Biomedical Engineering, University of T
 Dr. Yang Jiang\
 Department of Behavioral Sciences, University of Kentucky, Lexington
 
-
-
-### The setup is developed under the supervision of:
-Dr. Xiaopeng Zhao\
-Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
-\
-Dr. Yang Jiang\
-Department of Behavioral Sciences, University of Kentucky, Lexington
-
 This platform is based on the Bluegrass Short-term Memory Protocol developed by Dr. Yang Jiang
 
 ## Installation
