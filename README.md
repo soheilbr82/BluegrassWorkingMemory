@@ -12,11 +12,11 @@ Michael O'neil, moneil8@vols.utk.edu
 The setup is developed under the supervision of:\
 Dr. Xiaopeng Zhao\
 Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
-
+\
 Dr. Yang Jiang\
-Department of Behavioral Sciences, University of Kentucky, Lexington
+Department of Behavioral Sciences, University of Kentucky, Lexington\
 
-Bluegrass Short-term Memory paradigm was originally designed by Dr. Yang Jiang.
+This platform is based on the Bluegrass Short-term Memory Protocol developed by Dr. Yang Jiang
 
 ## Installation
 The setup is generally OS-independent. However, the below instruction is for Windows 10.
