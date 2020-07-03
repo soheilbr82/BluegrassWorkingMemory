@@ -1,6 +1,6 @@
 # Bluegrass Short-term memory evaluation paradigm
 
-![image](https://github.com/soheilbr82/BluegrassWorkingMemory/tree/master/stimuli/Platform.png)
+![image](stimuli/Platform.png)
 
 This is a python-based implementation of Bluegrass short-term memory. The setup is able to synchronously collect behavioral, neural, and any other LSL-compatible neurophysiological signals.
 The setup can be extended to synchronously collect other types of behavioral and physiological signals (Heart rate, saccade, GSR, etc.).
