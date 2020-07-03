@@ -5,7 +5,7 @@
 This is a python-based implementation of Bluegrass short-term memory. The setup is able to synchronously collect behavioral, neural, and any other LSL-compatible neurophysiological signals.
 The setup can be extended to synchronously collect other types of behavioral and physiological signals (Heart rate, saccade, GSR, etc.).
 
-### The setup is developed by:\
+### The setup is developed by:
 PhD Student: Soheil Borhani, sborhani at vols.utk.edu\
 Undergraduate Research Assistant: Michael O'neil, moneil8 at vols.utk.edu
 
@@ -19,7 +19,7 @@ Department of Behavioral Sciences, University of Kentucky, Lexington
 
 
 
-### The setup is developed under the supervision of:\
+### The setup is developed under the supervision of:
 Dr. Xiaopeng Zhao\
 Department of Mechanical, Aerospace, and Biomedical Engineering, University of Tennessee, Knoxville\
 \
