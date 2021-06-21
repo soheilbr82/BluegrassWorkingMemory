@@ -1,0 +1,2 @@
+docs
+psychopy_ext

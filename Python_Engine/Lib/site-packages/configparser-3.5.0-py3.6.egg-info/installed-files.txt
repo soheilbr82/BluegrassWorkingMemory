@@ -1,0 +1,11 @@
+..\backports\configparser\__init__.py
+..\backports\configparser\__pycache__\__init__.cpython-36.pyc
+..\backports\configparser\__pycache__\helpers.cpython-36.pyc
+..\backports\configparser\helpers.py
+..\configparser-3.5.0-py3.6-nspkg.pth
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+namespace_packages.txt
+not-zip-safe
+top_level.txt

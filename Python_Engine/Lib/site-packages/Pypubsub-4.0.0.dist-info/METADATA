@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: Pypubsub
+Version: 4.0.0
+Summary: Python Publish-Subscribe Package
+Home-page: https://github.com/schollii/pypubsub
+Author: Oliver Schoenborn (aka "schollii")
+Author-email: oliver.schoenborn@gmail.com
+License: BSD License
+Keywords: publish subscribe observer pattern signal signals event events message messages messaging dispatch dispatching
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+PyPubSub provides a publish - subscribe API that facilitates the development of 
+event-based / message-based applications. PyPubSub supports sending and
+receiving messages between objects of an application. It is centered on the
+notion of a topic; senders publish messages of a given topic, and listeners
+subscribe to messages of a given topic. The package also supports a variety of
+advanced features that facilitate debugging and maintaining pypubsub topics
+and messages in larger applications.
+
+Install most recent stable with "pip install pypubsub".
+
+Useful links:
+
+- Project on PyPI: https://pypi.python.org/pypi/PyPubSub
+- The documentation for latest stable release is at
+  http://pypubsub.readthedocs.io/en/stable/.
+- The documentation for latest code is at
+  http://pypubsub.readthedocs.io/en/master/.
+
+
+
+

@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: numpy-ringbuffer
+Version: 0.2.1
+Summary: Ring buffer implementation for numpy
+Home-page: https://github.com/eric-wieser/numpy_ringbuffer
+Author: Eric Wieser
+Author-email: wieser.eric+numpy@gmail.com
+License: MIT
+Download-URL: https://github.com/eric-wieser/numpy_ringbuffer/tarball/v0.2.1
+Requires-Dist: numpy
+
+numpy\_ringbuffer
+
+

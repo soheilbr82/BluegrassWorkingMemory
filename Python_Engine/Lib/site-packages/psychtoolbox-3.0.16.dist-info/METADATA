@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: psychtoolbox
+Version: 3.0.16
+Summary: Pieces of Psychtoolbox-3 ported to CPython.
+Home-page: http://psychtoolbox.org
+Author: Mario Kleiner
+Author-email: mario.kleiner.de@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Psychophysics Toolbox
+===============================
+
+Psychophysics Toolbox Version 3 (PTB-3)
+is a free set of Matlab and GNU Octave functions for vision and neuroscience
+research. It makes it easy to synthesize and show accurately controlled visual and auditory stimuli and interact with
+the observer.
+
+This package is a port to Python of a small subset of PTB's funcionality, namely the audio library and the USB keyboard
+handling. The code was ported to Python by Mario Kleiner, with a syntax designed to match the MATLAB library almost
+entirely (see demos/*_.oldschool.py). This has the advantage for MATLAB users that they can copy and paste most of
+their previous code, as you can see in the snippet below.
+
+On top of that, Jon Peirce has added a more "Pythonic" wrapper to allow similar functionality in an object-oriented
+framework (e.g. using a Stream class). See demos/*_.oldschool.py with an identical snippet below.
+
+MATLAB-style snippet:
+
+``` python
+from psychtoolbox import PsychPortAudio, GetSecs
+
+Fs = 44100
+with SoundFile("path/to/my/sound/file.wav") as snd:
+    stereowav = snd.read(dtype='float32', always_2d=True)
+
+PsychPortAudio('Verbosity', 5)  # set verbose mode
+
+pahandle = PsychPortAudio('Open', [], [], [0], Fs, 2)
+PsychPortAudio('Volume', pahandle, 0.5)
+PsychPortAudio('FillBuffer', pahandle, stereowav)
+
+# Start playback for one repetition (1), 5 seconds from now, wait for sound onset:
+PsychPortAudio('Start', pahandle, 1, GetSecs() + 1, 1)
+while PsychPortAudio('GetStatus', pahandle)['Active']:
+    WaitSecs('YieldSecs', 1)
+
+# Wait for sound to stop by itself, block until then:
+[startTime, endPositionSecs, xruns, estStopTime] = PsychPortAudio('Stop', pahandle, 1)
+print('StartTime', startTime, 'secs. Stop time', estStopTime, 'secs.\n');
+```
+
+Pythonic equivalent code using Stream class
+
+``` python
+from psychtoolbox import audio, GetSecs
+
+Fs = 44100
+with SoundFile("path/to/my/sound/file.wav") as snd:
+    stereowav = snd.read(dtype='float32', always_2d=True)
+
+audio.verbosity(5)  # set verbose mode
+
+stream = audio.Stream(freq=Fs, channels=2)  # Stream is a class with methods as below
+stream.volume(0.5)
+stream.fill_buffer(stereowav)
+
+# Start playback for one repetition, 1 seconds from now, wait for onset:
+stream.start(repetitions=1, when=GetSecs() + 1, wait_for_start=1)
+while stream.status['Active']:
+    WaitSecs('YieldSecs', 1)  # didn't write a Pythonic wrapper yet
+
+startTime, endPositionSecs, xruns, estStopTime = stream.stop()
+print(f'StartTime:{startTime}s. Stop time:{estStopTime}s.')
+```
+
+

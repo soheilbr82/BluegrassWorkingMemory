@@ -1,0 +1,265 @@
+Metadata-Version: 2.1
+Name: pyqmix
+Version: 2018.12.13
+Summary: A wrapper for the Cetoni Qmix SDK.
+Home-page: https://pyqmix.readthedocs.io/
+Author: 
+Requires-Dist: cffi
+Requires-Dist: ruamel.yaml
+Requires-Dist: appdirs
+Requires-Dist: pypiwin32; platform_system == "Windows"
+Requires-Dist: future; python_version < "3"
+
+Lorenzo Alfine <lorenzo.alfine@gmail.com>
+Richard HÃ¶chenberger <richard.hoechenberger@gmail.com>
+Camilla Arndal Andersen <camilla@arndalandersen.dk>
+Author-email: richard.hoechenberger@gmail.com
+License: GPL v3
+Project-URL: Source Code, https://github.com/psyfood/pyqmix/
+Project-URL: Bug Tracker, https://github.com/psyfood/pyqmix/issues/
+Description: # Qmix pump and valve interface
+        
+        [![Travis-CI Build Status](https://travis-ci.org/psyfood/pyqmix.svg?branch=master)](https://travis-ci.org/psyfood/pyqmix)
+        [![Latest PyPI Release](https://img.shields.io/pypi/v/pyqmix.svg)](https://pypi.org/project/pyqmix/)
+        [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyqmix.svg)](https://anaconda.org/conda-forge/pyqmix)
+        
+        This Python package wraps the Cetoni Qmix pump and valve interface DLLs using
+        CFFI. Supports both Python 2 and 3.
+        
+        ## Table of Contents
+        
+        - [Quick installation instructions](#quick-installation-instructions)
+        - [Gustometer Setup](#gustometer-setup)
+        - [Operate pumps via pyqmix-web](#operate-pumps-via-pyqmix-web) _(no installation required)_
+        - [Install Python and pyqmix](#install-python-and-pyqmix)
+        - [Operate pumps via pyqmix](#operate-pumps-via-pyqmix) _(requires installation)_
+        - [Best Practices](#best-practices)
+        - [Citation](#citation)
+        
+        ## Quick installation instructions
+        
+        
+        If you already installed the Cetoni QmixSDK, created a device configuration via QmixElements, and are familiar with Python, you may simply install `pyqmix` via `conda` from `conda-forge`. To create a new `conda` environment for `pyqmix`, named `nemesys`, run
+        ```
+        conda create -n nemesys -c conda-forge pyqmix
+        ```
+        
+        from the command line. This is the recommended installation procedure, because it ensures the installation of `pyqmix` and all of its dependencies will not alter any existing `conda` environment.
+        
+        To install `pyqmix` into an *existing* `conda` environment, run
+        
+        ```
+        conda install -c conda-forge pyqmix
+        ```
+        However, we suggest you always create a new, dedicated environment instead.
+        
+        Of course, you may also install `pyqmix` via good ol' `pip`:
+        
+        ```
+        pip install pyqmix
+        ```
+        
+        If you have no idea what this is all about, we suggest you follow the procedures described below.
+        
+        ## Gustometer Setup
+        
+        ### Find the CD and license code
+        Open the paper-folder you received from CETONI. In the folder you will find a license key and a CD with:
+         - Software: QmixElements and QmixSDK
+        - QmixElements Manual in Doc/Software, which specifies system requirements and how to install the software
+        
+        ### Prepare your computer
+        Set up system requirements on your computer as described in the documentation. Refer to QmixElements manual:
+        - Disable standby or sleep mode
+        - Disable power saving for USB ports in the power options of the Control Panel
+        
+        ### Install QmixElements
+        - Insert the CD from CETONI in your computer. 
+        - Start the QmixElements_Setup_v###.exe application file as administrator
+        - During installation, accept to install VCI (VCI Driver)
+        - In case you get a Windows Security Warning -> Trust software from HMS Technology Center Ravensburg GmbH. 
+        
+        ### Install QmixSDK
+        - Install the QmixSDK you received on the CD from CETONI. pyqmix is tested to work with QmixSDK versions 20180626 and later. If your version of QmixSDK is older than that, please contact Cetoni to retrieve an updated version.
+        - Restart the computer
+        
+        ### Connect the pump system to the computer
+        - Connect the base module to computer
+        - Connect power supply to base module
+        - Connect the base module to the computer via the supplied USB cable.
+        
+        ### Create a Device Configuration
+        - Open QmixElements
+        - Activate License
+          - Edit -> Activate Licence -> [enter License Key] -> click OK. The License key is found by the CD in the folder provided by CETONI.
+        - Create the actual Device Configuration
+            - Device -> Create Configurations -> you are then asked: `Would you like to update your local device database devices.db with a new one?`. If you have a devices.db file on the installation CD from CETONI, then click the `Yes` button and browse for the file.  
+        From the device list drag all the items you want to configure to the ‘Device Configuration’ which is the large empty black area to the left of the QmixElements software. You do not need to configure the base module.
+        - Save configuration
+          - File -> save.
+        - Right-click on the first item in the Device Configuration (the one furthest to the left), select ‘Configure’ and follow the instructions. Repeat the procedure for each item in the Device Configuration. 
+        - Save configuration at the end. 
+        
+        ## Operate pumps via pyqmix-web
+        The user-visible part of pyqmix-web runs in the web browser. You need a modern browser to run the application. Recent versions of Chrome, Firefox, and Safari work well; Microsoft Internet Explorer is not supported.
+        
+        - Download the latest pyqmix-web release from https://github.com/psyfood/pyqmix-web/releases (you will want to get the `.exe` file).
+        - Run the `.exe` file
+        
+        ## Install Python and pyqmix
+        ### Install Anaconda Python
+        - Install the Anaconda Python distribution if it is not installed already. You can download it from https://www.anaconda.com/download/. Get the "Python 3.x" version.
+        - During setup, skip the installation of Microsoft VSCode
+        - Otherwise just accept the default settings
+        
+        ### Create a new Python environment
+        Create a new `conda` Python environment called `nemesys` and install the required packages into this environment.
+        - Click the Windows button / Open the “Start” menu
+        - Open the Anaconda Prompt. This will open a command line window which is correctly set up to use your Anaconda Python installation.
+        - Create the `nemesys` Python environment and install `pyqmix` as well as the [Spyder](https://www.spyder-ide.org) development environment:
+          - Type: `conda create -n nemesys python=3 pyqmix spyder`
+        
+        ## Operate pumps via pyqmix
+        ### Open and run scripts
+        - Open the Anaconda Prompt as described above.
+        - Activate the `nemesys` environment
+          - Type: `activate nemesys`
+        - Start the Spyder development environment:
+          - Type: `spyder`
+        - Open the [example scripts](https://github.com/psyfood/pyqmix/tree/master/pyqmix/examples), run and modify them.
+        - Have fun!
+        
+        ## Best Practices
+        
+        The setup of the pump system and best practices are described in our paper (see reference below).
+        Additionally, we suggest the following procedures the improve reliability and ease of use:
+        
+        - Make sure output tubes are of equal length to ensure that the stimulus onset is identical for all pumps.
+        - Ensure that tube cuts are clean and straight, perpendicular to the tube. This can be achieved by using so-called tube-cutters. 
+        - The 50 mL glass syringes fit really tightly into the syringe holders.Especially when new, it might have to push relatively hard to actually insert the syringe into the holder. This will get easier over time, as the syringe and holders “grind in”.
+        - Glass syringes might break if too much pressure is exerted. Ensure that the syringes are attached tightly to using the the syringe holders and syringe piston holders, but don’t tighten the syringe holder too much as it can smash the syringe glass cylinder.
+        - Remove air bubbles. We developed a new procedure that is implemented in pyqmix-web and will guide the user through the process.
+        
+        ## Citation
+        
+        If you use this software, please cite our publication:
+        
+        >   [Andersen, Camilla Arndal, Alfine, Lorenzo, Ohla, Kathrin, & Höchenberger, Richard. (_in press_). A new gustometer: Template for the construction of a portable and modular stimulator for taste and lingual touch. _Behavior Research Methods_. doi: 10.3758/s13428-018-1145-1](https://doi.org/10.3758/s13428-018-1145-1)
+        
+        A [pre-print]( http://doi.org/10.5281/zenodo.1456663) is available from Zenodo.
+        
+        
+        Version 2018.12.13
+        ------------------
+        * Update installation instructions
+        * Automated testing using Travis now also runs on Python 2.7 (only tested
+          Python 3 before)
+        * `switch_valve_when_done` keyword argument is now available for all pumping
+          operations
+        * Depend on `pypiwin32` instead of `pywin32`
+        
+        Version 2018.11.07
+        ------------------
+        * Report correct version number when installed from wheel.
+        
+        Version 2018.11.05
+        ------------------
+        * Updates to documentation
+        * Handle the case when a user requests to delete a non-existing configuration file.
+        * Update packages requirements to include `pywin32`.
+        * We now build universal wheels for both Python 2 and 3.
+        * Add support for Travis continuous integration tests on GitHub.
+        
+        Version 2018.10.08a
+        -------------------
+        * Functionally identical to version 2018.10.08, but with additional docstrings for the config module.
+        
+        Version 2018.10.08
+        ------------------
+        This release includes all the changes listed below.
+        
+        2018-10-06
+        ----------
+        * Assume default location of Qmix configuration files (to avoid full path).   
+        
+        2018-10-04
+        ----------
+        * Rename `switch_valve_when_finished` keyword argument to 
+          `switch_valve_when_done` to match `wait_until_done` wording
+        * Add `switch_valve_when_finished` keyword argument to
+          `QmixPump.aspirate()` method
+        * Wait until the pumps have actually started operating before checking
+          whether pumping has finished when using the `wait_until_done` kwarg.
+        * Imply `wait_until_done=True` when `switch_valve_when_done=True`
+          keyword argument is specified.
+        * Improve auto-discovery of Qmix SDK DLLs
+        
+        2018-09-13
+        ----------
+        * Rename `blocking_wait` keyword argument to `wait_until_done`
+        
+        2018-08-09
+        ----------
+        * Add `QmixPump.fill()` and `empty()` methods
+        * `QmixPump` methods now raise on invalid volume and flow rate
+          parameters
+        * Package specifications have been moved from `setup.py` to `setup.cfg`
+        * Fix bug when determining valid valve positions
+        
+        2018-08-07
+        ----------
+        * Fix reathedocs build
+        
+        2018-08-02
+        ----------
+        * Add `config` module to `pyqmix.__all__`
+        * Remove Qmix SDK header directory config option
+        * Add convenience method `QmixPump.set_syringe_params_by_type()`
+          to set syringe parameters by specifying a syringe type
+        * Set default flow and volume units when instantiation a `QmixPump`
+        
+        2018-08-01
+        ----------
+        * Support latest Qmix SDK
+        * Do not restore pump drive position counter by default
+        * Add convenience method `QmixPump.set_syringe_params_by_type()`
+          to set syringe parameters by specifying a syringe type
+        
+        2018-05-25
+        ----------
+        * Support for a configuration file
+        * Don't do a blocking wait when calibrating pumps by default
+        * More example scripts
+        * Add support for several new Qmix SDK functions
+        
+        2018-02-21
+        ----------
+        * `QmixBus` gained `auto_open` and `auto_start` init parameters
+        * `QmixPump` gained `auto_enable` init parameter
+        
+        2017-10-09
+        ----------
+        * Convert `config.py` module to sub-package
+        * Add pump configurations to the new `config.pumps` module 
+        * Add `pump.init_pump()` convenience function for pump setup
+        * Add `pump.fill_syringes()` and `pump.empty_syringes` convenience functions
+        
+        2017-10-05
+        ----------
+        * Add `config.py` module
+        
+        2017-10-04
+        ----------
+        * Add valve `position` setter. The new property replaces the `current_position`
+          property of `QmixValve` and `QmixExternalValve`.
+        * Split monolithic `interface.py` into device-specific submodules
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

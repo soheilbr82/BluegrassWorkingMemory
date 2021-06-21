@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: runcmd
+Version: 2018.12.14
+Summary: run shell command
+Home-page: https://github.com/looking-for-a-job/runcmd.py
+License: UNKNOWN
+Keywords: run command
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+Requires-Dist: public
+Requires-Dist: setuptools
+
+[![](https://img.shields.io/pypi/pyversions/runcmd.svg?longCache=True)](https://pypi.org/project/runcmd/)
+
+#### Install
+```bash
+$ [sudo] pip install runcmd
+```
+
+#### Classes
+`runcmd.Process` - Process class
+
+method|`__doc__`
+-|-
+`__bool__()`|return True if status code is 0
+`exc()`|raise OSError if status code is not 0. returns self
+`kill(signal=None)`|kill process. return error string if error occured
+
+@property|`__doc__`
+-|-
+`args`|return arguments list
+`code`|return status code
+`err`|return stderr string
+`ok`|return True if status code is 0, else False
+`out`|return stdout string
+`pid`|return rocess pid
+`running`|return True if process is running, else False
+
+#### Functions
+function|`__doc__`
+-|-
+`runcmd.run(args, cwd=None, background=False)`|run command and return Process object
+
+#### Examples
+```python
+>>> import runcmd
+>>> r = runcmd.run(["echo", "hello world"])
+>>> r.code  # exit status code
+0
+>>> r.out  # stdout
+'hello world'
+>>> r.err  # stderr
+''
+>>> r.pid  # process pid
+1234
+```
+
+`background=True`
+```python
+>>> r = runcmd.run(["sleep","5"],background=True)
+>>> while r.running:  # True if process is running and not "zombie process"
+>>>     print("running")
+```
+`kill(signal=None)` - kill process
+```python
+>>> r.kill(-9)
+```
+
+`exc()` - raise exception if code is not `0`
+```python
+>>> runcmd.run(["ls"]).exc()              # code 0, ok
+>>> runcmd.run(["mkdir", "/"]).exc()      # code 1, raise OSError
+...
+OSError: exited with code 1
+mkdir: /: Is a directory
+```
+
+<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+

@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: applescript
+Version: 2018.11.19
+Summary: run applescript
+Home-page: https://github.com/looking-for-a-job/applescript.py
+License: UNKNOWN
+Keywords: applescript
+Platform: UNKNOWN
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: only
+Requires-Dist: public
+Requires-Dist: runcmd
+Requires-Dist: setuptools
+Requires-Dist: temp
+
+[![](https://img.shields.io/badge/OS-MacOS-blue.svg?longCache=True)]()
+[![](https://img.shields.io/pypi/pyversions/applescript.svg?longCache=True)](https://pypi.org/pypi/applescript/)
+
+#### Install
+```bash
+$ [sudo] pip install applescript
+```
+
+#### Functions
+function|description
+-|-
+`applescript.run(applescript, background=False)`|run applescript file/string
+`applescript.tell.app(appname, applescript, background=False)`|execute applescript `tell application "VLC" ...`
+
+#### Examples
+```python
+>>> import applescript
+>>> r = applescript.run('return 1')
+>>> r = applescript.run('path/to/file.applescript')
+
+>>> r.code
+0
+>>> r.out
+'hello world'
+>>> r.err
+''
+```
+
+`tell application "appname"`
+```python
+>>> applescript.tell.app("Terminal",'do script "ls"')
+>>> applescript.tell.app("Terminal",'do script "ls"',background=True)
+```
+
+<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+

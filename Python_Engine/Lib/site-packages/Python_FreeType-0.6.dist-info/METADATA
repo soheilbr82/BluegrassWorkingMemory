@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: Python-FreeType
+Version: 0.6
+Summary: language bindings for FreeType
+Home-page: http://github.com/ldo/python_freetype
+Author: Lawrence D'Oliveiro
+Author-email: ldo@geek-central.gen.nz
+License: FTL/LGPL v2.1+
+Platform: Linux
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Text Processing :: Fonts
+
+language bindings for the FreeType library, for Python 3.2 or later
+
+

@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: temp
+Version: 2018.11.20
+Summary: temp.tempdir(), temp.tempfile() functions
+Home-page: https://github.com/looking-for-a-job/temp.py
+License: UNKNOWN
+Keywords: temp tempdir tempfile
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: public
+Requires-Dist: setuptools
+
+[![](https://img.shields.io/pypi/pyversions/temp.svg?longCache=True)](https://pypi.org/pypi/temp/)
+
+#### Install
+```bash
+$ [sudo] pip install temp
+```
+
+#### Functions
+function|description
+-|-
+`temp.tempdir()`|create temp dir and return path
+`temp.tempfile()`|create temp file and return path
+
+#### Examples
+```python
+>>> import temp
+>>> temp.tempdir() # dir
+'/var/folders/rv/gy6_gnfs1d7_pd1518p27tsr0000gn/T/tmpqlLDxb'
+
+>>> temp.tempfile() # file
+'/var/folders/rv/gy6_gnfs1d7_pd1518p27tsr0000gn/T/tmpsctFHJ'
+
+>>> temp.TMPDIR
+'/var/folders/rv/gy6_gnfs1d7_pd1518p27tsr0000gn/T'
+```
+
+<p align="center"><a href="https://pypi.org/project/readme-md/">readme-md</a> - README.md generator</p>
+

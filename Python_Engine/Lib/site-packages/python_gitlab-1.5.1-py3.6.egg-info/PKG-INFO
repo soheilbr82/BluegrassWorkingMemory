@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: python-gitlab
+Version: 1.5.1
+Summary: Interact with GitLab API
+Home-page: https://github.com/python-gitlab/python-gitlab
+Author: Gauvain Pocentek
+Author-email: gauvain@pocentek.net
+License: LGPLv3
+Description: Interact with GitLab API
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
