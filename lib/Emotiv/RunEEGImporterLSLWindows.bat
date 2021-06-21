@@ -1,1 +1,0 @@
-java -Djava.library.path=EmotivLibs -jar EEGImporterLSL.jar
