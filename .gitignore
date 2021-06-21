@@ -32,7 +32,6 @@ ENV/
 .directory
 .gdb_history
 ehthumbs.db
-Icon?
 *.orig
 old
 Thumbs.db
