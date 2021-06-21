@@ -15,9 +15,13 @@ __pycache__/
 # Virtual Environment files
 .env
 .venv
+.idea
 env/
 venv/
 ENV/
+
+#idea folder
+.idea/
 
 # Spyder project settings
 .spyderproject
