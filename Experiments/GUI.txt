@@ -1,0 +1,22 @@
+# Store info about the experiment session
+if len(sys.argv) > 1:
+    ss = ' '.join([x for x in sys.argv[1:]])
+    expInfo = eval(ss)
+    # expInfo = {i.split(': ')[0]: i.split(': ')[1] for i in ss.split(', ')}
+    expName = 'STM'
+
+else:
+    expName = 'STM'
+    expInfo = {'Participant ID': '', 'Age': '', 'Sex': ['Male', 'Female'],
+                        'Handedness': ['Right-handed', 'Left-handed', 'Ambidextrous'],
+                        'EEG headset': ['Emotiv EPOC(+)', 'gtec Unicorn', 'gtec Nautilus 32'],
+                        'Experiment Mode': ['train'], 'Visualize Epochs': False,
+                        'date': [data.getDateStr()]}
+    dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
+    if dlg.OK == False:
+        core.quit()  # user pressed cancel
+    expInfo['expName'] = expName
+
+# Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
+filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['Participant ID'], expInfo['Experiment Mode'], expInfo['date'])
+#filename = 'test'
